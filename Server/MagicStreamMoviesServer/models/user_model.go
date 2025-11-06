@@ -1,6 +1,8 @@
 package models
 
 import (
+	"time"
+
 	"go.mongodb.org/mongo-driver/v2/bson"
 )
 
@@ -12,9 +14,9 @@ type User struct {
 	Email           string        `json:"email" bson:"email" validate:"email,required"`
 	Password        string        `json:"password" bson:"password" validate:"required,min=6"`
 	Role            string        `json:"role" bson:"role" validate:"oneof=ADMIN USER"`
-	CreatedAt       string        `json:"created_at" bson:"created_at"`
-	UpdatedAt       string        `json:"update_at" bson:"update_at"`
+	CreatedAt       time.Time     `json:"created_at" bson:"created_at"`
+	UpdatedAt       time.Time     `json:"update_at" bson:"update_at"`
 	Token           string        `json:"token" bson:"token"`
 	RefreshToken    string        `json:"refresh_token" bson:"refresh_token"`
-	FavouriteGenres []string      `json:"favourite_genres" bson:"favourite_genres" validate:"required,dive"`
+	FavouriteGenres []Genre       `json:"favourite_genres" bson:"favourite_genres" validate:"required,dive"`
 }
