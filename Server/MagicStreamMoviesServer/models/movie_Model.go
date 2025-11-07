@@ -14,7 +14,7 @@ type Ranking struct {
 
 type Movie struct {
 	ID          bson.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
-	ImdbID      string        `bson:"imdb_id" json:"imdb_id" validate:"required"`
+	ImdbID      string        `bson:"imdb_id" json:"imdb_id" validate:"required"` //IMDB 针对电影的独特编号，格式为ttXXXXXXX
 	Title       string        `bson:"title" json:"title" validate:"required,min=2,max=500"`
 	PosterPath  string        `bson:"poster_path" json:"poster_path" validate:"required,url"`
 	YoutubeID   string        `bson:"youtube_id" json:"youtube_id" validate:"required"`
@@ -22,3 +22,7 @@ type Movie struct {
 	AdminReview string        `bson:"admin_review" json:"admin_review"`
 	Ranking     Ranking       `bson:"ranking" json:"ranking" validate:"required"`
 }
+
+//bson标签：定义MongoDb的字段名
+//json标签：定义JSON序列化的字段名
+//validate标签：定义数据验证规则
