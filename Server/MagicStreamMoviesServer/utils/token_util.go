@@ -55,11 +55,11 @@ func GenerateAllTokens(email, firstName, lastName, role, userId string) (string,
 		RegisteredClaims: jwt.RegisteredClaims{
 			Issuer:    "MagicStream",
 			IssuedAt:  jwt.NewNumericDate(time.Now()),
-			ExpiresAt: jwt.NewNumericDate(time.Now().Add(24 * time.Hour)),
+			ExpiresAt: jwt.NewNumericDate(time.Now().Add(24 * 7 * time.Hour)),
 		},
 	}
 	refreshtoken := jwt.NewWithClaims(jwt.SigningMethodHS256, refreshClaims)
-	signedRefreshToken, err := refreshtoken.SignedString([]byte(SECRET_KEY))
+	signedRefreshToken, err := refreshtoken.SignedString([]byte(SECRET_REFRESH_KEY))
 	if err != nil {
 		return "", "", err
 	}
