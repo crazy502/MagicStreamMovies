@@ -7,6 +7,7 @@ import (
 
 	"github.com/crazy502/MagicStreamMovies/Server/MagicStreamMoviesServer/database"
 	"github.com/crazy502/MagicStreamMovies/Server/MagicStreamMoviesServer/models"
+	"github.com/crazy502/MagicStreamMovies/Server/MagicStreamMoviesServer/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"go.mongodb.org/mongo-driver/v2/bson"
@@ -99,8 +100,32 @@ func LoginUser() gin.HandlerFunc {
 
 		err = bcrypt.CompareHashAndPassword([]byte(foundUser.Password), []byte(userLogin.Password))
 		if err != nil {
-			c.JSON(htttp.StatusUnauthorized, gin.H{"error": "Invalid email or password"})
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "Invalid email or password"})
 			return
 		}
+		token, refreshToken, err := utils.GenerateAllTokens(foundUser.Email, foundUser.FirstName, foundUser.LastName, foundUser.Role, foundUser.UserID)
+
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to generate tokens"})
+			return
+		}
+		err = utils.UpdateAllTokens(foundUser.UserID, token, refreshToken)
+
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update tokens"})
+			return
+		}
+
+		c.JSON(http.StatusOK, models.UserResponse{
+			UserId:          foundUser.UserID,
+			FirstName:       foundUser.FirstName,
+			LastName:        foundUser.LastName,
+			Email:           foundUser.Email,
+			Role:            foundUser.Role,
+			Token:           token,
+			RefreshToken:    refreshToken,
+			FavouriteGenres: foundUser.FavouriteGenres,
+		})
+
 	}
 }
