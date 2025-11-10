@@ -1,9 +1,10 @@
 package routes
 
 import (
+	"github.com/gin-gonic/gin"
+
 	controller "github.com/crazy502/MagicStreamMovies/Server/MagicStreamMoviesServer/controllers"
 	"github.com/crazy502/MagicStreamMovies/Server/MagicStreamMoviesServer/middleware"
-	"github.com/gin-gonic/gin"
 )
 
 func SetupProtectedRoutes(router *gin.Engine) {
