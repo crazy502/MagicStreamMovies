@@ -8,8 +8,8 @@ import (
 func SetupUnProtectedRoutes(router *gin.Engine) {
 
 	router.GET("/movies", controller.GetMovies())
-
 	router.POST("/register", controller.RegisterUser())
 	router.POST("/login", controller.LoginUser())
+	router.PATCH("/updaterreview/:imdb_id", controller.AdminReviewUpdate())
 
 }
