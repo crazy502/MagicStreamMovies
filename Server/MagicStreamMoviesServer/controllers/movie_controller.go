@@ -3,6 +3,7 @@ package controllers
 import (
 	"context"
 	"errors"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -126,7 +127,7 @@ func AdminReviewUpdate() gin.HandlerFunc {
 			c.JSON(http.StatusBadRequest, gin.H{"error": "Role not found in context"})
 			return
 		}
-		if role != "admin" {
+		if role != "ADMIN" {
 			c.JSON(http.StatusBadRequest, gin.H{"error": "User must be part of the ADMIN role"})
 			return
 		}
@@ -150,7 +151,7 @@ func AdminReviewUpdate() gin.HandlerFunc {
 		}
 		sentiment, rankVal, err := GetReviewRanking(req.AdminReview)
 		if err != nil {
-			c.JSON(http.StatusInternalServerError, gin.H{"error": "Error getting review ranking"})
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Error getting review ranking", "details": err.Error()})
 			return
 		}
 
@@ -192,7 +193,12 @@ func GetReviewRanking(admin_review string) (string, int, error) {
 	rankings, err := GetRankings()
 
 	if err != nil {
-		return "", 0, err
+		return "", 0, fmt.Errorf("failed to get rankings: %w", err)
+	}
+
+	// 检查是否有有效的ranking数据
+	if len(rankings) == 0 {
+		return "", 0, errors.New("no rankings found in database")
 	}
 
 	sentimentDelimited := ""
@@ -213,26 +219,33 @@ func GetReviewRanking(admin_review string) (string, int, error) {
 
 	QwenApiKey := os.Getenv("QWEN_FLASH_API_KEY")
 	if QwenApiKey == "" {
-		return "", 0, errors.New("could not read QWEN_FLASH_API_KEY")
+		return "", 0, errors.New("could not read QWEN_FLASH_API_KEY from environment")
 	}
 
 	llm, err := openai.New(
 		openai.WithToken(QwenApiKey),
 		openai.WithBaseURL("https://dashscope.aliyuncs.com/compatible-mode/v1/"),
+		openai.WithModel("qwen-turbo"),
 	)
 
 	if err != nil {
-		return "", 0, err
+		return "", 0, fmt.Errorf("failed to create OpenAI client: %w", err)
 	}
 
 	base_prompt_template := os.Getenv("BASE_PROMPT_TEMPLATE")
+	if base_prompt_template == "" {
+		return "", 0, errors.New("BASE_PROMPT_TEMPLATE not found in environment")
+	}
 
 	base_promt := strings.Replace(base_prompt_template, "{rankings}", sentimentDelimited, 1)
+	fullPrompt := base_promt + admin_review
 
-	response, err := llm.Call(context.Background(), base_promt+admin_review)
+	log.Printf("Sending prompt to Qwen API: %s", fullPrompt)
+
+	response, err := llm.Call(context.Background(), fullPrompt)
 
 	if err != nil {
-		return "", 0, err
+		return "", 0, fmt.Errorf("failed to call Qwen API: %w", err)
 	}
 	rankVal := 0
 
