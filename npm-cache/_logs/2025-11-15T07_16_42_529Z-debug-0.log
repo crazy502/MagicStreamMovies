@@ -1,0 +1,12 @@
+0 verbose cli E:\Node\node.exe E:\Node\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:E:\Node\node_modules\npm\npmrc
+4 silly config load:file:F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\.npmrc
+5 silly config load:file:C:\Users\nishu\.npmrc
+6 silly config load:file:E:\Node\node_global\etc\npmrc
+7 verbose title npm run dev
+8 verbose argv "run" "dev"
+9 verbose logfile logs-max:10 dir:F:\CodeforGo\MagicStreamMovies\npm-cache\_logs\2025-11-15T07_16_42_529Z-
+10 verbose logfile F:\CodeforGo\MagicStreamMovies\npm-cache\_logs\2025-11-15T07_16_42_529Z-debug-0.log
+11 silly logfile done cleaning log files
