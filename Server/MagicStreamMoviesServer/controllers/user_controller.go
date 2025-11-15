@@ -2,17 +2,19 @@ package controllers
 
 import (
 	"context"
+	"fmt"
 	"net/http"
 	"time"
 
-	"github.com/crazy502/MagicStreamMovies/Server/MagicStreamMoviesServer/database"
-	"github.com/crazy502/MagicStreamMovies/Server/MagicStreamMoviesServer/models"
-	"github.com/crazy502/MagicStreamMovies/Server/MagicStreamMoviesServer/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"go.mongodb.org/mongo-driver/v2/bson"
 	"go.mongodb.org/mongo-driver/v2/mongo"
 	"golang.org/x/crypto/bcrypt"
+
+	"github.com/crazy502/MagicStreamMovies/Server/MagicStreamMoviesServer/database"
+	"github.com/crazy502/MagicStreamMovies/Server/MagicStreamMoviesServer/models"
+	"github.com/crazy502/MagicStreamMovies/Server/MagicStreamMoviesServer/utils"
 )
 
 var userCollection *mongo.Collection = database.OpenCollection("users")
@@ -26,7 +28,7 @@ func HashPassword(password string) (string, error) {
 	return string(HashPassword), nil
 }
 
-func RegisterUser() gin.HandlerFunc {
+func RegisterUser(client *mongo.Client) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		var user models.User
 
@@ -78,7 +80,7 @@ func RegisterUser() gin.HandlerFunc {
 	}
 }
 
-func LoginUser() gin.HandlerFunc {
+func LoginUser(client *mongo.Client) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		var userLogin models.UserLogin
 
@@ -89,6 +91,8 @@ func LoginUser() gin.HandlerFunc {
 
 		var ctx, cancel = context.WithTimeout(context.Background(), 100*time.Second)
 		defer cancel()
+
+		var userCollection *mongo.Collection = database.OpenCollection("users", client)
 
 		var foundUser models.User
 
@@ -116,16 +120,84 @@ func LoginUser() gin.HandlerFunc {
 			return
 		}
 
+		http.SetCookie(c.Writer, &http.Cookie{
+			Name:  "access_token",
+			Value: token,
+			Path:  "/",
+			// Domain:   "localhost",
+			MaxAge:   86400,
+			Secure:   true,
+			HttpOnly: true,
+			SameSite: http.SameSiteNoneMode,
+		})
+		http.SetCookie(c.Writer, &http.Cookie{
+			Name:  "refresh_token",
+			Value: refreshToken,
+			Path:  "/",
+			// Domain:   "localhost",
+			MaxAge:   604800,
+			Secure:   true,
+			HttpOnly: true,
+			SameSite: http.SameSiteNoneMode,
+		})
+
 		c.JSON(http.StatusOK, models.UserResponse{
-			UserId:          foundUser.UserID,
-			FirstName:       foundUser.FirstName,
-			LastName:        foundUser.LastName,
-			Email:           foundUser.Email,
-			Role:            foundUser.Role,
-			Token:           token,
-			RefreshToken:    refreshToken,
+			UserId:    foundUser.UserID,
+			FirstName: foundUser.FirstName,
+			LastName:  foundUser.LastName,
+			Email:     foundUser.Email,
+			Role:      foundUser.Role,
+			//Token:           token,
+			//RefreshToken:    refreshToken,
 			FavouriteGenres: foundUser.FavouriteGenres,
 		})
+
+	}
+}
+
+func LogoutHandler(client *mongo.Client) gin.HandlerFunc {
+	return func(c *gin.Context) {
+		var UserLogout struct {
+			UserId string `json:"user_id"`
+		}
+
+		err := c.ShouldBindJSON(&UserLogout)
+		if err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid request payload"})
+			return
+		}
+
+		fmt.Println("User ID from Logout request:", UserLogout.UserId)
+
+		err = utils.UpdateAllTokens(UserLogout.UserId, "", "", client) // Clear tokens in the database
+
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": "Error logging out"})
+			return
+		}
+
+		http.SetCookie(c.Writer, &http.Cookie{
+			Name:  "access_token",
+			Value: "",
+			Path:  "/",
+			// Domain:   "localhost",
+			MaxAge:   -1,
+			Secure:   true,
+			HttpOnly: true,
+			SameSite: http.SameSiteNoneMode,
+		})
+
+		http.SetCookie(c.Writer, &http.Cookie{
+			Name:     "refresh_token",
+			Value:    "",
+			Path:     "/",
+			MaxAge:   -1,
+			Secure:   true,
+			HttpOnly: true,
+			SameSite: http.SameSiteNoneMode,
+		})
+
+		c.JSON(http.StatusOK, gin.H{"message": "Logged out successfully"})
 
 	}
 }
