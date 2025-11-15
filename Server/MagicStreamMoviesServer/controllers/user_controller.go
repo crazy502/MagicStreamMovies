@@ -51,6 +51,8 @@ func RegisterUser(client *mongo.Client) gin.HandlerFunc {
 		var ctx, cancel = context.WithTimeout(context.Background(), 100*time.Second)
 		defer cancel()
 
+		var userCollection *mongo.Collection = database.OpenCollection("users", client)
+
 		count, err := userCollection.CountDocuments(ctx, bson.M{"email": user.Email})
 
 		if err != nil {
