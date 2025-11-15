@@ -17,8 +17,6 @@ import (
 	"github.com/crazy502/MagicStreamMovies/Server/MagicStreamMoviesServer/utils"
 )
 
-var userCollection *mongo.Collection = database.OpenCollection("users")
-
 func HashPassword(password string) (string, error) {
 	HashPassword, err := bcrypt.GenerateFromPassword([]byte(password), bcrypt.DefaultCost)
 	if err != nil {
@@ -113,7 +111,7 @@ func LoginUser(client *mongo.Client) gin.HandlerFunc {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to generate tokens"})
 			return
 		}
-		err = utils.UpdateAllTokens(foundUser.UserID, token, refreshToken)
+		err = utils.UpdateAllTokens(foundUser.UserID, token, refreshToken, client)
 
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update tokens"})
