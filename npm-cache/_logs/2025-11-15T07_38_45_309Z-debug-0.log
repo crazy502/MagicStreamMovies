@@ -1,0 +1,45 @@
+0 verbose cli E:\Node\node.exe E:\Node\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:E:\Node\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\nishu\AppData\Local\Microsoft\TypeScript\5.9\.npmrc
+5 silly config load:file:C:\Users\nishu\.npmrc
+6 silly config load:file:E:\Node\node_global\etc\npmrc
+7 verbose title npm install @types/react@ts5.9
+8 verbose argv "install" "--ignore-scripts" "@types/react@ts5.9" "--save-dev" "--user-agent" "typesInstaller/5.9.3"
+9 verbose logfile logs-max:10 dir:F:\CodeforGo\MagicStreamMovies\npm-cache\_logs\2025-11-15T07_38_45_309Z-
+10 verbose logfile F:\CodeforGo\MagicStreamMovies\npm-cache\_logs\2025-11-15T07_38_45_309Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly packumentCache corgi:https://registry.npmjs.org/@types%2freact cache-miss
+14 http fetch GET 200 https://registry.npmjs.org/@types%2freact 1371ms (cache miss)
+15 silly packumentCache corgi:https://registry.npmjs.org/@types%2freact set size:undefined disposed:false
+16 silly idealTree buildDeps
+17 silly fetch manifest @types/react@19.2.5
+18 silly packumentCache full:https://registry.npmjs.org/@types%2freact cache-miss
+19 http fetch GET 200 https://registry.npmjs.org/@types%2freact 229ms (cache revalidated)
+20 silly packumentCache full:https://registry.npmjs.org/@types%2freact set size:2520331 disposed:false
+21 silly placeDep ROOT @types/react@19.2.5 OK for:  want: 19.2.5
+22 silly fetch manifest csstype@^3.0.2
+23 silly packumentCache full:https://registry.npmjs.org/csstype cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/csstype 198ms (cache revalidated)
+25 silly packumentCache full:https://registry.npmjs.org/csstype set size:266051 disposed:false
+26 silly placeDep ROOT csstype@3.2.0 OK for: @types/react@19.2.5 want: ^3.0.2
+27 silly reify moves {}
+28 silly audit bulk request {
+28 silly audit   'types-registry': [ '0.1.746' ],
+28 silly audit   '@types/react': [ '19.2.5' ],
+28 silly audit   csstype: [ '3.2.0' ]
+28 silly audit }
+29 http cache @types/react@https://registry.npmjs.org/@types/react/-/react-19.2.5.tgz 0ms (cache hit)
+30 http cache csstype@https://registry.npmjs.org/csstype/-/csstype-3.2.0.tgz 0ms (cache hit)
+31 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 224ms
+32 silly audit report {}
+33 silly ADD node_modules/csstype
+34 silly ADD node_modules/@types/react
+35 verbose cwd C:\Users\nishu\AppData\Local\Microsoft\TypeScript\5.9
+36 verbose os Windows_NT 10.0.26200
+37 verbose node v22.18.0
+38 verbose npm  v10.9.3
+39 verbose exit 0
+40 info ok

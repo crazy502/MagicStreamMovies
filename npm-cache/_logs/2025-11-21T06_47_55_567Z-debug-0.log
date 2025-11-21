@@ -1,0 +1,714 @@
+0 verbose cli E:\Node\node.exe E:\Node\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:E:\Node\node_modules\npm\npmrc
+4 silly config load:file:F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\.npmrc
+5 silly config load:file:C:\Users\nishu\.npmrc
+6 silly config load:file:E:\Node\node_global\etc\npmrc
+7 verbose title npm install axios
+8 verbose argv "install" "axios"
+9 verbose logfile logs-max:10 dir:F:\CodeforGo\MagicStreamMovies\npm-cache\_logs\2025-11-21T06_47_55_567Z-
+10 verbose logfile F:\CodeforGo\MagicStreamMovies\npm-cache\_logs\2025-11-21T06_47_55_567Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly fetch manifest axios@*
+15 silly packumentCache full:https://registry.npmjs.org/axios cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/axios 788ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/axios set size:undefined disposed:false
+18 silly placeDep ROOT axios@1.13.2 OK for: magic-stream-client@0.0.0 want: *
+19 silly fetch manifest follow-redirects@^1.15.6
+20 silly packumentCache full:https://registry.npmjs.org/follow-redirects cache-miss
+21 silly fetch manifest form-data@^4.0.4
+22 silly packumentCache full:https://registry.npmjs.org/form-data cache-miss
+23 silly fetch manifest proxy-from-env@^1.1.0
+24 silly packumentCache full:https://registry.npmjs.org/proxy-from-env cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/follow-redirects 187ms (cache miss)
+26 silly packumentCache full:https://registry.npmjs.org/follow-redirects set size:undefined disposed:false
+27 http fetch GET 200 https://registry.npmjs.org/proxy-from-env 617ms (cache miss)
+28 silly packumentCache full:https://registry.npmjs.org/proxy-from-env set size:undefined disposed:false
+29 http fetch GET 200 https://registry.npmjs.org/form-data 632ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/form-data set size:undefined disposed:false
+31 silly placeDep ROOT follow-redirects@1.15.11 OK for: axios@1.13.2 want: ^1.15.6
+32 silly placeDep ROOT form-data@4.0.5 OK for: axios@1.13.2 want: ^4.0.4
+33 silly placeDep ROOT proxy-from-env@1.1.0 OK for: axios@1.13.2 want: ^1.1.0
+34 silly fetch manifest asynckit@^0.4.0
+35 silly packumentCache full:https://registry.npmjs.org/asynckit cache-miss
+36 silly fetch manifest combined-stream@^1.0.8
+37 silly packumentCache full:https://registry.npmjs.org/combined-stream cache-miss
+38 silly fetch manifest es-set-tostringtag@^2.1.0
+39 silly packumentCache full:https://registry.npmjs.org/es-set-tostringtag cache-miss
+40 silly fetch manifest hasown@^2.0.2
+41 silly packumentCache full:https://registry.npmjs.org/hasown cache-miss
+42 silly fetch manifest mime-types@^2.1.12
+43 silly packumentCache full:https://registry.npmjs.org/mime-types cache-miss
+44 http fetch GET 200 https://registry.npmjs.org/asynckit 186ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/asynckit set size:undefined disposed:false
+46 http fetch GET 200 https://registry.npmjs.org/combined-stream 188ms (cache miss)
+47 silly packumentCache full:https://registry.npmjs.org/combined-stream set size:undefined disposed:false
+48 http fetch GET 200 https://registry.npmjs.org/es-set-tostringtag 189ms (cache miss)
+49 silly packumentCache full:https://registry.npmjs.org/es-set-tostringtag set size:undefined disposed:false
+50 http fetch GET 200 https://registry.npmjs.org/mime-types 629ms (cache miss)
+51 silly packumentCache full:https://registry.npmjs.org/mime-types set size:undefined disposed:false
+52 http fetch GET 200 https://registry.npmjs.org/hasown 734ms (cache miss)
+53 silly packumentCache full:https://registry.npmjs.org/hasown set size:undefined disposed:false
+54 silly placeDep ROOT asynckit@0.4.0 OK for: form-data@4.0.5 want: ^0.4.0
+55 silly placeDep ROOT combined-stream@1.0.8 OK for: form-data@4.0.5 want: ^1.0.8
+56 silly placeDep ROOT es-set-tostringtag@2.1.0 OK for: form-data@4.0.5 want: ^2.1.0
+57 silly placeDep ROOT hasown@2.0.2 OK for: form-data@4.0.5 want: ^2.0.2
+58 silly placeDep ROOT mime-types@2.1.35 OK for: form-data@4.0.5 want: ^2.1.12
+59 silly fetch manifest delayed-stream@~1.0.0
+60 silly packumentCache full:https://registry.npmjs.org/delayed-stream cache-miss
+61 silly fetch manifest es-errors@^1.3.0
+62 silly packumentCache full:https://registry.npmjs.org/es-errors cache-miss
+63 silly fetch manifest get-intrinsic@^1.2.6
+64 silly packumentCache full:https://registry.npmjs.org/get-intrinsic cache-miss
+65 silly fetch manifest has-tostringtag@^1.0.2
+66 silly packumentCache full:https://registry.npmjs.org/has-tostringtag cache-miss
+67 silly fetch manifest function-bind@^1.1.2
+68 silly packumentCache full:https://registry.npmjs.org/function-bind cache-miss
+69 silly fetch manifest mime-db@1.52.0
+70 silly packumentCache full:https://registry.npmjs.org/mime-db cache-miss
+71 http fetch GET 200 https://registry.npmjs.org/delayed-stream 173ms (cache miss)
+72 silly packumentCache full:https://registry.npmjs.org/delayed-stream set size:undefined disposed:false
+73 http fetch GET 200 https://registry.npmjs.org/es-errors 174ms (cache miss)
+74 silly packumentCache full:https://registry.npmjs.org/es-errors set size:undefined disposed:false
+75 http fetch GET 200 https://registry.npmjs.org/has-tostringtag 182ms (cache miss)
+76 silly packumentCache full:https://registry.npmjs.org/has-tostringtag set size:undefined disposed:false
+77 http fetch GET 200 https://registry.npmjs.org/get-intrinsic 196ms (cache miss)
+78 silly packumentCache full:https://registry.npmjs.org/get-intrinsic set size:undefined disposed:false
+79 http fetch GET 200 https://registry.npmjs.org/function-bind 208ms (cache miss)
+80 silly packumentCache full:https://registry.npmjs.org/function-bind set size:undefined disposed:false
+81 http fetch GET 200 https://registry.npmjs.org/mime-db 680ms (cache miss)
+82 silly packumentCache full:https://registry.npmjs.org/mime-db set size:undefined disposed:false
+83 silly placeDep ROOT delayed-stream@1.0.0 OK for: combined-stream@1.0.8 want: ~1.0.0
+84 silly placeDep ROOT es-errors@1.3.0 OK for: es-set-tostringtag@2.1.0 want: ^1.3.0
+85 silly placeDep ROOT get-intrinsic@1.3.0 OK for: es-set-tostringtag@2.1.0 want: ^1.2.6
+86 silly placeDep ROOT has-tostringtag@1.0.2 OK for: es-set-tostringtag@2.1.0 want: ^1.0.2
+87 silly fetch manifest gopd@^1.2.0
+88 silly packumentCache full:https://registry.npmjs.org/gopd cache-miss
+89 silly fetch manifest get-proto@^1.0.1
+90 silly packumentCache full:https://registry.npmjs.org/get-proto cache-miss
+91 silly fetch manifest has-symbols@^1.1.0
+92 silly packumentCache full:https://registry.npmjs.org/has-symbols cache-miss
+93 silly fetch manifest es-object-atoms@^1.1.1
+94 silly packumentCache full:https://registry.npmjs.org/es-object-atoms cache-miss
+95 silly fetch manifest math-intrinsics@^1.1.0
+96 silly packumentCache full:https://registry.npmjs.org/math-intrinsics cache-miss
+97 silly fetch manifest es-define-property@^1.0.1
+98 silly packumentCache full:https://registry.npmjs.org/es-define-property cache-miss
+99 silly fetch manifest call-bind-apply-helpers@^1.0.2
+100 silly packumentCache full:https://registry.npmjs.org/call-bind-apply-helpers cache-miss
+101 silly fetch manifest has-symbols@^1.0.3
+102 silly packumentCache full:https://registry.npmjs.org/has-symbols cache-miss
+103 http fetch GET 200 https://registry.npmjs.org/has-symbols 173ms (cache miss)
+104 silly packumentCache full:https://registry.npmjs.org/has-symbols set size:undefined disposed:false
+105 http fetch GET 200 https://registry.npmjs.org/get-proto 177ms (cache miss)
+106 silly packumentCache full:https://registry.npmjs.org/get-proto set size:undefined disposed:false
+107 http fetch GET 200 https://registry.npmjs.org/es-object-atoms 177ms (cache miss)
+108 silly packumentCache full:https://registry.npmjs.org/es-object-atoms set size:undefined disposed:false
+109 http fetch GET 200 https://registry.npmjs.org/gopd 180ms (cache miss)
+110 silly packumentCache full:https://registry.npmjs.org/gopd set size:undefined disposed:false
+111 http fetch GET 200 https://registry.npmjs.org/es-define-property 194ms (cache miss)
+112 silly packumentCache full:https://registry.npmjs.org/es-define-property set size:undefined disposed:false
+113 http fetch GET 200 https://registry.npmjs.org/math-intrinsics 197ms (cache miss)
+114 silly packumentCache full:https://registry.npmjs.org/math-intrinsics set size:undefined disposed:false
+115 http fetch GET 200 https://registry.npmjs.org/has-symbols 597ms (cache miss)
+116 silly packumentCache full:https://registry.npmjs.org/has-symbols set size:undefined disposed:false
+117 http fetch GET 200 https://registry.npmjs.org/call-bind-apply-helpers 625ms (cache miss)
+118 silly packumentCache full:https://registry.npmjs.org/call-bind-apply-helpers set size:undefined disposed:false
+119 silly placeDep ROOT call-bind-apply-helpers@1.0.2 OK for: get-intrinsic@1.3.0 want: ^1.0.2
+120 silly placeDep ROOT es-define-property@1.0.1 OK for: get-intrinsic@1.3.0 want: ^1.0.1
+121 silly placeDep ROOT es-object-atoms@1.1.1 OK for: get-intrinsic@1.3.0 want: ^1.1.1
+122 silly placeDep ROOT function-bind@1.1.2 OK for: get-intrinsic@1.3.0 want: ^1.1.2
+123 silly placeDep ROOT get-proto@1.0.1 OK for: get-intrinsic@1.3.0 want: ^1.0.1
+124 silly placeDep ROOT gopd@1.2.0 OK for: get-intrinsic@1.3.0 want: ^1.2.0
+125 silly placeDep ROOT has-symbols@1.1.0 OK for: get-intrinsic@1.3.0 want: ^1.1.0
+126 silly placeDep ROOT math-intrinsics@1.1.0 OK for: get-intrinsic@1.3.0 want: ^1.1.0
+127 silly fetch manifest dunder-proto@^1.0.1
+128 silly packumentCache full:https://registry.npmjs.org/dunder-proto cache-miss
+129 http fetch GET 200 https://registry.npmjs.org/dunder-proto 181ms (cache miss)
+130 silly packumentCache full:https://registry.npmjs.org/dunder-proto set size:undefined disposed:false
+131 silly placeDep ROOT dunder-proto@1.0.1 OK for: get-proto@1.0.1 want: ^1.0.1
+132 silly placeDep ROOT mime-db@1.52.0 OK for: mime-types@2.1.35 want: 1.52.0
+133 silly reify moves {}
+134 silly audit bulk request {
+134 silly audit   '@babel/code-frame': [ '7.27.1' ],
+134 silly audit   '@babel/compat-data': [ '7.28.5' ],
+134 silly audit   '@babel/core': [ '7.28.5' ],
+134 silly audit   '@babel/generator': [ '7.28.5' ],
+134 silly audit   '@babel/helper-compilation-targets': [ '7.27.2' ],
+134 silly audit   '@babel/helper-globals': [ '7.28.0' ],
+134 silly audit   '@babel/helper-module-imports': [ '7.27.1' ],
+134 silly audit   '@babel/helper-module-transforms': [ '7.28.3' ],
+134 silly audit   '@babel/helper-plugin-utils': [ '7.27.1' ],
+134 silly audit   '@babel/helper-string-parser': [ '7.27.1' ],
+134 silly audit   '@babel/helper-validator-identifier': [ '7.28.5' ],
+134 silly audit   '@babel/helper-validator-option': [ '7.27.1' ],
+134 silly audit   '@babel/helpers': [ '7.28.4' ],
+134 silly audit   '@babel/parser': [ '7.28.5' ],
+134 silly audit   '@babel/plugin-transform-react-jsx-self': [ '7.27.1' ],
+134 silly audit   '@babel/plugin-transform-react-jsx-source': [ '7.27.1' ],
+134 silly audit   '@babel/runtime': [ '7.28.4' ],
+134 silly audit   '@babel/template': [ '7.27.2' ],
+134 silly audit   '@babel/traverse': [ '7.28.5' ],
+134 silly audit   '@babel/types': [ '7.28.5' ],
+134 silly audit   '@esbuild/aix-ppc64': [ '0.25.12' ],
+134 silly audit   '@esbuild/android-arm': [ '0.25.12' ],
+134 silly audit   '@esbuild/android-arm64': [ '0.25.12' ],
+134 silly audit   '@esbuild/android-x64': [ '0.25.12' ],
+134 silly audit   '@esbuild/darwin-arm64': [ '0.25.12' ],
+134 silly audit   '@esbuild/darwin-x64': [ '0.25.12' ],
+134 silly audit   '@esbuild/freebsd-arm64': [ '0.25.12' ],
+134 silly audit   '@esbuild/freebsd-x64': [ '0.25.12' ],
+134 silly audit   '@esbuild/linux-arm': [ '0.25.12' ],
+134 silly audit   '@esbuild/linux-arm64': [ '0.25.12' ],
+134 silly audit   '@esbuild/linux-ia32': [ '0.25.12' ],
+134 silly audit   '@esbuild/linux-loong64': [ '0.25.12' ],
+134 silly audit   '@esbuild/linux-mips64el': [ '0.25.12' ],
+134 silly audit   '@esbuild/linux-ppc64': [ '0.25.12' ],
+134 silly audit   '@esbuild/linux-riscv64': [ '0.25.12' ],
+134 silly audit   '@esbuild/linux-s390x': [ '0.25.12' ],
+134 silly audit   '@esbuild/linux-x64': [ '0.25.12' ],
+134 silly audit   '@esbuild/netbsd-arm64': [ '0.25.12' ],
+134 silly audit   '@esbuild/netbsd-x64': [ '0.25.12' ],
+134 silly audit   '@esbuild/openbsd-arm64': [ '0.25.12' ],
+134 silly audit   '@esbuild/openbsd-x64': [ '0.25.12' ],
+134 silly audit   '@esbuild/openharmony-arm64': [ '0.25.12' ],
+134 silly audit   '@esbuild/sunos-x64': [ '0.25.12' ],
+134 silly audit   '@esbuild/win32-arm64': [ '0.25.12' ],
+134 silly audit   '@esbuild/win32-ia32': [ '0.25.12' ],
+134 silly audit   '@esbuild/win32-x64': [ '0.25.12' ],
+134 silly audit   '@eslint-community/eslint-utils': [ '4.9.0' ],
+134 silly audit   'eslint-visitor-keys': [ '3.4.3', '4.2.1' ],
+134 silly audit   '@eslint-community/regexpp': [ '4.12.2' ],
+134 silly audit   '@eslint/config-array': [ '0.21.1' ],
+134 silly audit   '@eslint/config-helpers': [ '0.4.2' ],
+134 silly audit   '@eslint/core': [ '0.17.0' ],
+134 silly audit   '@eslint/eslintrc': [ '3.3.1' ],
+134 silly audit   globals: [ '14.0.0', '16.5.0' ],
+134 silly audit   '@eslint/js': [ '9.39.1' ],
+134 silly audit   '@eslint/object-schema': [ '2.1.7' ],
+134 silly audit   '@eslint/plugin-kit': [ '0.4.1' ],
+134 silly audit   '@humanfs/core': [ '0.19.1' ],
+134 silly audit   '@humanfs/node': [ '0.16.7' ],
+134 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+134 silly audit   '@humanwhocodes/retry': [ '0.4.3' ],
+134 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+134 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+134 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+134 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+134 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+134 silly audit   '@popperjs/core': [ '2.11.8' ],
+134 silly audit   '@react-aria/ssr': [ '3.9.10' ],
+134 silly audit   '@restart/hooks': [ '0.4.16', '0.5.1' ],
+134 silly audit   '@restart/ui': [ '1.9.4' ],
+134 silly audit   uncontrollable: [ '8.0.4', '7.2.1' ],
+134 silly audit   '@rolldown/pluginutils': [ '1.0.0-beta.47' ],
+134 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-android-arm64': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-darwin-arm64': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-darwin-x64': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-freebsd-x64': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-linux-loong64-gnu': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-linux-ppc64-gnu': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-openharmony-arm64': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-win32-x64-gnu': [ '4.53.2' ],
+134 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.53.2' ],
+134 silly audit   '@swc/helpers': [ '0.5.17' ],
+134 silly audit   '@types/babel__core': [ '7.20.5' ],
+134 silly audit   '@types/babel__generator': [ '7.27.0' ],
+134 silly audit   '@types/babel__template': [ '7.4.4' ],
+134 silly audit   '@types/babel__traverse': [ '7.28.0' ],
+134 silly audit   '@types/estree': [ '1.0.8' ],
+134 silly audit   '@types/json-schema': [ '7.0.15' ],
+134 silly audit   '@types/prop-types': [ '15.7.15' ],
+134 silly audit   '@types/react': [ '19.2.5' ],
+134 silly audit   '@types/react-dom': [ '19.2.3' ],
+134 silly audit   '@types/react-transition-group': [ '4.4.12' ],
+134 silly audit   '@types/warning': [ '3.0.3' ],
+134 silly audit   '@vitejs/plugin-react': [ '5.1.1' ],
+134 silly audit   acorn: [ '8.15.0' ],
+134 silly audit   'acorn-jsx': [ '5.3.2' ],
+134 silly audit   ajv: [ '6.12.6' ],
+134 silly audit   'ansi-styles': [ '4.3.0' ],
+134 silly audit   argparse: [ '2.0.1' ],
+134 silly audit   'balanced-match': [ '1.0.2' ],
+134 silly audit   'baseline-browser-mapping': [ '2.8.28' ],
+134 silly audit   'brace-expansion': [ '1.1.12' ],
+134 silly audit   browserslist: [ '4.28.0' ],
+134 silly audit   callsites: [ '3.1.0' ],
+134 silly audit   'caniuse-lite': [ '1.0.30001754' ],
+134 silly audit   chalk: [ '4.1.2' ],
+134 silly audit   classnames: [ '2.5.1' ],
+134 silly audit   'color-convert': [ '2.0.1' ],
+134 silly audit   'color-name': [ '1.1.4' ],
+134 silly audit   'concat-map': [ '0.0.1' ],
+134 silly audit   'convert-source-map': [ '2.0.0' ],
+134 silly audit   'cross-spawn': [ '7.0.6' ],
+134 silly audit   csstype: [ '3.2.0' ],
+134 silly audit   debug: [ '4.4.3' ],
+134 silly audit   'deep-is': [ '0.1.4' ],
+134 silly audit   dequal: [ '2.0.3' ],
+134 silly audit   'dom-helpers': [ '5.2.1' ],
+134 silly audit   'electron-to-chromium': [ '1.5.253' ],
+134 silly audit   esbuild: [ '0.25.12' ],
+134 silly audit   escalade: [ '3.2.0' ],
+134 silly audit   'escape-string-regexp': [ '4.0.0' ],
+134 silly audit   eslint: [ '9.39.1' ],
+134 silly audit   'eslint-plugin-react-hooks': [ '7.0.1' ],
+134 silly audit   'eslint-plugin-react-refresh': [ '0.4.24' ],
+134 silly audit   'eslint-scope': [ '8.4.0' ],
+134 silly audit   espree: [ '10.4.0' ],
+134 silly audit   esquery: [ '1.6.0' ],
+134 silly audit   esrecurse: [ '4.3.0' ],
+134 silly audit   estraverse: [ '5.3.0' ],
+134 silly audit   esutils: [ '2.0.3' ],
+134 silly audit   'fast-deep-equal': [ '3.1.3' ],
+134 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+134 silly audit   'fast-levenshtein': [ '2.0.6' ],
+134 silly audit   fdir: [ '6.5.0' ],
+134 silly audit   'file-entry-cache': [ '8.0.0' ],
+134 silly audit   'find-up': [ '5.0.0' ],
+134 silly audit   'flat-cache': [ '4.0.1' ],
+134 silly audit   flatted: [ '3.3.3' ],
+134 silly audit   fsevents: [ '2.3.3' ],
+134 silly audit   gensync: [ '1.0.0-beta.2' ],
+134 silly audit   'glob-parent': [ '6.0.2' ],
+134 silly audit   'has-flag': [ '4.0.0' ],
+134 silly audit   'hermes-estree': [ '0.25.1' ],
+134 silly audit   'hermes-parser': [ '0.25.1' ],
+134 silly audit   ignore: [ '5.3.2' ],
+134 silly audit   'import-fresh': [ '3.3.1' ],
+134 silly audit   imurmurhash: [ '0.1.4' ],
+134 silly audit   invariant: [ '2.2.4' ],
+134 silly audit   'is-extglob': [ '2.1.1' ],
+134 silly audit   'is-glob': [ '4.0.3' ],
+134 silly audit   isexe: [ '2.0.0' ],
+134 silly audit   'js-tokens': [ '4.0.0' ],
+134 silly audit   'js-yaml': [ '4.1.1' ],
+134 silly audit   jsesc: [ '3.1.0' ],
+134 silly audit   'json-buffer': [ '3.0.1' ],
+134 silly audit   'json-schema-traverse': [ '0.4.1' ],
+134 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+134 silly audit   json5: [ '2.2.3' ],
+134 silly audit   keyv: [ '4.5.4' ],
+134 silly audit   levn: [ '0.4.1' ],
+134 silly audit   'locate-path': [ '6.0.0' ],
+134 silly audit   'lodash.merge': [ '4.6.2' ],
+134 silly audit   'loose-envify': [ '1.4.0' ],
+134 silly audit   'lru-cache': [ '5.1.1' ],
+134 silly audit   minimatch: [ '3.1.2' ],
+134 silly audit   ms: [ '2.1.3' ],
+134 silly audit   nanoid: [ '3.3.11' ],
+134 silly audit   'natural-compare': [ '1.4.0' ],
+134 silly audit   'node-releases': [ '2.0.27' ],
+134 silly audit   'object-assign': [ '4.1.1' ],
+134 silly audit   optionator: [ '0.9.4' ],
+134 silly audit   'p-limit': [ '3.1.0' ],
+134 silly audit   'p-locate': [ '5.0.0' ],
+134 silly audit   'parent-module': [ '1.0.1' ],
+134 silly audit   'path-exists': [ '4.0.0' ],
+134 silly audit   'path-key': [ '3.1.1' ],
+134 silly audit   picocolors: [ '1.1.1' ],
+134 silly audit   picomatch: [ '4.0.3' ],
+134 silly audit   postcss: [ '8.5.6' ],
+134 silly audit   'prelude-ls': [ '1.2.1' ],
+134 silly audit   'prop-types': [ '15.8.1' ],
+134 silly audit   'prop-types-extra': [ '1.1.1' ],
+134 silly audit   punycode: [ '2.3.1' ],
+134 silly audit   react: [ '19.2.0' ],
+134 silly audit   'react-bootstrap': [ '2.10.10' ],
+134 silly audit   'react-dom': [ '19.2.0' ],
+134 silly audit   'react-is': [ '16.13.1' ],
+134 silly audit   'react-lifecycles-compat': [ '3.0.4' ],
+134 silly audit   'react-refresh': [ '0.18.0' ],
+134 silly audit   'react-transition-group': [ '4.4.5' ],
+134 silly audit   'resolve-from': [ '4.0.0' ],
+134 silly audit   rollup: [ '4.53.2' ],
+134 silly audit   scheduler: [ '0.27.0' ],
+134 silly audit   semver: [ '6.3.1' ],
+134 silly audit   'shebang-command': [ '2.0.0' ],
+134 silly audit   'shebang-regex': [ '3.0.0' ],
+134 silly audit   'source-map-js': [ '1.2.1' ],
+134 silly audit   'strip-json-comments': [ '3.1.1' ],
+134 silly audit   'supports-color': [ '7.2.0' ],
+134 silly audit   tinyglobby: [ '0.2.15' ],
+134 silly audit   tslib: [ '2.8.1' ],
+134 silly audit   'type-check': [ '0.4.0' ],
+134 silly audit   'update-browserslist-db': [ '1.1.4' ],
+134 silly audit   'uri-js': [ '4.4.1' ],
+134 silly audit   vite: [ '7.2.2' ],
+134 silly audit   warning: [ '4.0.3' ],
+134 silly audit   which: [ '2.0.2' ],
+134 silly audit   'word-wrap': [ '1.2.5' ],
+134 silly audit   yallist: [ '3.1.1' ],
+134 silly audit   'yocto-queue': [ '0.1.0' ],
+134 silly audit   zod: [ '4.1.12' ],
+134 silly audit   'zod-validation-error': [ '4.0.2' ],
+134 silly audit   axios: [ '1.13.2' ],
+134 silly audit   'follow-redirects': [ '1.15.11' ],
+134 silly audit   'form-data': [ '4.0.5' ],
+134 silly audit   'proxy-from-env': [ '1.1.0' ],
+134 silly audit   asynckit: [ '0.4.0' ],
+134 silly audit   'combined-stream': [ '1.0.8' ],
+134 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+134 silly audit   hasown: [ '2.0.2' ],
+134 silly audit   'mime-types': [ '2.1.35' ],
+134 silly audit   'delayed-stream': [ '1.0.0' ],
+134 silly audit   'es-errors': [ '1.3.0' ],
+134 silly audit   'get-intrinsic': [ '1.3.0' ],
+134 silly audit   'has-tostringtag': [ '1.0.2' ],
+134 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+134 silly audit   'es-define-property': [ '1.0.1' ],
+134 silly audit   'es-object-atoms': [ '1.1.1' ],
+134 silly audit   'function-bind': [ '1.1.2' ],
+134 silly audit   'get-proto': [ '1.0.1' ],
+134 silly audit   gopd: [ '1.2.0' ],
+134 silly audit   'has-symbols': [ '1.1.0' ],
+134 silly audit   'math-intrinsics': [ '1.1.0' ],
+134 silly audit   'dunder-proto': [ '1.0.1' ],
+134 silly audit   'mime-db': [ '1.52.0' ]
+134 silly audit }
+135 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\fsevents
+136 silly reify mark deleted [
+136 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\fsevents'
+136 silly reify ]
+137 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-win32-ia32-msvc
+138 silly reify mark deleted [
+138 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-win32-ia32-msvc'
+138 silly reify ]
+139 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-win32-arm64-msvc
+140 silly reify mark deleted [
+140 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-win32-arm64-msvc'
+140 silly reify ]
+141 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-openharmony-arm64
+142 silly reify mark deleted [
+142 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-openharmony-arm64'
+142 silly reify ]
+143 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-x64-musl
+144 silly reify mark deleted [
+144 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-x64-musl'
+144 silly reify ]
+145 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-x64-gnu
+146 silly reify mark deleted [
+146 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-x64-gnu'
+146 silly reify ]
+147 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-s390x-gnu
+148 silly reify mark deleted [
+148 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-s390x-gnu'
+148 silly reify ]
+149 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-riscv64-musl
+150 silly reify mark deleted [
+150 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-riscv64-musl'
+150 silly reify ]
+151 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-riscv64-gnu
+152 silly reify mark deleted [
+152 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-riscv64-gnu'
+152 silly reify ]
+153 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-ppc64-gnu
+154 silly reify mark deleted [
+154 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-ppc64-gnu'
+154 silly reify ]
+155 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-loong64-gnu
+156 silly reify mark deleted [
+156 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-loong64-gnu'
+156 silly reify ]
+157 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-arm64-musl
+158 silly reify mark deleted [
+158 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-arm64-musl'
+158 silly reify ]
+159 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-arm64-gnu
+160 silly reify mark deleted [
+160 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-arm64-gnu'
+160 silly reify ]
+161 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-arm-musleabihf
+162 silly reify mark deleted [
+162 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-arm-musleabihf'
+162 silly reify ]
+163 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-arm-gnueabihf
+164 silly reify mark deleted [
+164 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-arm-gnueabihf'
+164 silly reify ]
+165 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-freebsd-x64
+166 silly reify mark deleted [
+166 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-freebsd-x64'
+166 silly reify ]
+167 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-freebsd-arm64
+168 silly reify mark deleted [
+168 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-freebsd-arm64'
+168 silly reify ]
+169 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-darwin-x64
+170 silly reify mark deleted [
+170 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-darwin-x64'
+170 silly reify ]
+171 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-darwin-arm64
+172 silly reify mark deleted [
+172 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-darwin-arm64'
+172 silly reify ]
+173 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-android-arm64
+174 silly reify mark deleted [
+174 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-android-arm64'
+174 silly reify ]
+175 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-android-arm-eabi
+176 silly reify mark deleted [
+176 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-android-arm-eabi'
+176 silly reify ]
+177 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\win32-ia32
+178 silly reify mark deleted [
+178 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\win32-ia32'
+178 silly reify ]
+179 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\win32-arm64
+180 silly reify mark deleted [
+180 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\win32-arm64'
+180 silly reify ]
+181 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\sunos-x64
+182 silly reify mark deleted [
+182 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\sunos-x64'
+182 silly reify ]
+183 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\openharmony-arm64
+184 silly reify mark deleted [
+184 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\openharmony-arm64'
+184 silly reify ]
+185 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\openbsd-x64
+186 silly reify mark deleted [
+186 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\openbsd-x64'
+186 silly reify ]
+187 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\openbsd-arm64
+188 silly reify mark deleted [
+188 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\openbsd-arm64'
+188 silly reify ]
+189 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\netbsd-x64
+190 silly reify mark deleted [
+190 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\netbsd-x64'
+190 silly reify ]
+191 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\netbsd-arm64
+192 silly reify mark deleted [
+192 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\netbsd-arm64'
+192 silly reify ]
+193 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-x64
+194 silly reify mark deleted [
+194 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-x64'
+194 silly reify ]
+195 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-s390x
+196 silly reify mark deleted [
+196 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-s390x'
+196 silly reify ]
+197 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-riscv64
+198 silly reify mark deleted [
+198 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-riscv64'
+198 silly reify ]
+199 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-ppc64
+200 silly reify mark deleted [
+200 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-ppc64'
+200 silly reify ]
+201 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-mips64el
+202 silly reify mark deleted [
+202 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-mips64el'
+202 silly reify ]
+203 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-loong64
+204 silly reify mark deleted [
+204 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-loong64'
+204 silly reify ]
+205 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-ia32
+206 silly reify mark deleted [
+206 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-ia32'
+206 silly reify ]
+207 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-arm64
+208 silly reify mark deleted [
+208 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-arm64'
+208 silly reify ]
+209 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-arm
+210 silly reify mark deleted [
+210 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-arm'
+210 silly reify ]
+211 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\freebsd-x64
+212 silly reify mark deleted [
+212 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\freebsd-x64'
+212 silly reify ]
+213 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\freebsd-arm64
+214 silly reify mark deleted [
+214 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\freebsd-arm64'
+214 silly reify ]
+215 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\darwin-x64
+216 silly reify mark deleted [
+216 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\darwin-x64'
+216 silly reify ]
+217 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\darwin-arm64
+218 silly reify mark deleted [
+218 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\darwin-arm64'
+218 silly reify ]
+219 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\android-x64
+220 silly reify mark deleted [
+220 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\android-x64'
+220 silly reify ]
+221 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\android-arm64
+222 silly reify mark deleted [
+222 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\android-arm64'
+222 silly reify ]
+223 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\android-arm
+224 silly reify mark deleted [
+224 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\android-arm'
+224 silly reify ]
+225 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\aix-ppc64
+226 silly reify mark deleted [
+226 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\aix-ppc64'
+226 silly reify ]
+227 http cache mime-db@https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz 0ms (cache hit)
+228 http cache math-intrinsics@https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz 0ms (cache hit)
+229 http cache dunder-proto@https://registry.npmjs.org/dunder-proto/-/dunder-proto-1.0.1.tgz 0ms (cache hit)
+230 http cache gopd@https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz 0ms (cache hit)
+231 http cache has-symbols@https://registry.npmjs.org/has-symbols/-/has-symbols-1.1.0.tgz 0ms (cache hit)
+232 http cache get-proto@https://registry.npmjs.org/get-proto/-/get-proto-1.0.1.tgz 0ms (cache hit)
+233 http cache function-bind@https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz 0ms (cache hit)
+234 http cache es-object-atoms@https://registry.npmjs.org/es-object-atoms/-/es-object-atoms-1.1.1.tgz 0ms (cache hit)
+235 http cache es-define-property@https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.1.tgz 0ms (cache hit)
+236 http cache has-tostringtag@https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz 0ms (cache hit)
+237 http cache get-intrinsic@https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.3.0.tgz 0ms (cache hit)
+238 http cache call-bind-apply-helpers@https://registry.npmjs.org/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz 0ms (cache hit)
+239 http cache delayed-stream@https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz 0ms (cache hit)
+240 http cache es-errors@https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz 0ms (cache hit)
+241 http cache mime-types@https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz 0ms (cache hit)
+242 http cache combined-stream@https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz 0ms (cache hit)
+243 http cache asynckit@https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz 0ms (cache hit)
+244 http cache hasown@https://registry.npmjs.org/hasown/-/hasown-2.0.2.tgz 0ms (cache hit)
+245 silly tarball no local data for mime-db@https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz. Extracting by manifest.
+246 http cache es-set-tostringtag@https://registry.npmjs.org/es-set-tostringtag/-/es-set-tostringtag-2.1.0.tgz 0ms (cache hit)
+247 http cache proxy-from-env@https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz 0ms (cache hit)
+248 http cache form-data@https://registry.npmjs.org/form-data/-/form-data-4.0.5.tgz 0ms (cache hit)
+249 silly tarball no local data for math-intrinsics@https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz. Extracting by manifest.
+250 silly tarball no local data for dunder-proto@https://registry.npmjs.org/dunder-proto/-/dunder-proto-1.0.1.tgz. Extracting by manifest.
+251 silly tarball no local data for gopd@https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz. Extracting by manifest.
+252 silly tarball no local data for has-symbols@https://registry.npmjs.org/has-symbols/-/has-symbols-1.1.0.tgz. Extracting by manifest.
+253 silly tarball no local data for get-proto@https://registry.npmjs.org/get-proto/-/get-proto-1.0.1.tgz. Extracting by manifest.
+254 silly tarball no local data for function-bind@https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz. Extracting by manifest.
+255 silly tarball no local data for es-object-atoms@https://registry.npmjs.org/es-object-atoms/-/es-object-atoms-1.1.1.tgz. Extracting by manifest.
+256 silly tarball no local data for es-define-property@https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.1.tgz. Extracting by manifest.
+257 http cache axios@https://registry.npmjs.org/axios/-/axios-1.13.2.tgz 0ms (cache hit)
+258 silly tarball no local data for has-tostringtag@https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz. Extracting by manifest.
+259 silly tarball no local data for get-intrinsic@https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.3.0.tgz. Extracting by manifest.
+260 silly tarball no local data for call-bind-apply-helpers@https://registry.npmjs.org/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz. Extracting by manifest.
+261 silly tarball no local data for delayed-stream@https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz. Extracting by manifest.
+262 silly tarball no local data for es-errors@https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz. Extracting by manifest.
+263 silly tarball no local data for mime-types@https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz. Extracting by manifest.
+264 http cache follow-redirects@https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.11.tgz 0ms (cache hit)
+265 silly tarball no local data for combined-stream@https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz. Extracting by manifest.
+266 silly tarball no local data for asynckit@https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz. Extracting by manifest.
+267 silly tarball no local data for hasown@https://registry.npmjs.org/hasown/-/hasown-2.0.2.tgz. Extracting by manifest.
+268 silly tarball no local data for es-set-tostringtag@https://registry.npmjs.org/es-set-tostringtag/-/es-set-tostringtag-2.1.0.tgz. Extracting by manifest.
+269 silly tarball no local data for proxy-from-env@https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz. Extracting by manifest.
+270 silly tarball no local data for form-data@https://registry.npmjs.org/form-data/-/form-data-4.0.5.tgz. Extracting by manifest.
+271 silly tarball no local data for axios@https://registry.npmjs.org/axios/-/axios-1.13.2.tgz. Extracting by manifest.
+272 silly tarball no local data for follow-redirects@https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.11.tgz. Extracting by manifest.
+273 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 202ms
+274 silly audit report {}
+275 http fetch GET 200 https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz 200ms (cache miss)
+276 http fetch GET 200 https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz 207ms (cache miss)
+277 http fetch GET 200 https://registry.npmjs.org/get-proto/-/get-proto-1.0.1.tgz 211ms (cache miss)
+278 http fetch GET 200 https://registry.npmjs.org/dunder-proto/-/dunder-proto-1.0.1.tgz 212ms (cache miss)
+279 http fetch GET 200 https://registry.npmjs.org/has-symbols/-/has-symbols-1.1.0.tgz 215ms (cache miss)
+280 http fetch GET 200 https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz 231ms (cache miss)
+281 http fetch GET 200 https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz 237ms (cache miss)
+282 http fetch GET 200 https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz 360ms (cache miss)
+283 http fetch GET 200 https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz 364ms (cache miss)
+284 http fetch GET 200 https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz 363ms (cache miss)
+285 http fetch GET 200 https://registry.npmjs.org/hasown/-/hasown-2.0.2.tgz 368ms (cache miss)
+286 http fetch GET 200 https://registry.npmjs.org/es-set-tostringtag/-/es-set-tostringtag-2.1.0.tgz 370ms (cache miss)
+287 http fetch GET 200 https://registry.npmjs.org/form-data/-/form-data-4.0.5.tgz 378ms (cache miss)
+288 http fetch GET 200 https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz 381ms (cache miss)
+289 http fetch GET 200 https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.11.tgz 526ms (cache miss)
+290 http fetch GET 200 https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.1.tgz 609ms (cache miss)
+291 http fetch GET 200 https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz 625ms (cache miss)
+292 http fetch GET 200 https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.3.0.tgz 634ms (cache miss)
+293 http fetch GET 200 https://registry.npmjs.org/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz 636ms (cache miss)
+294 http fetch GET 200 https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz 638ms (cache miss)
+295 http fetch GET 200 https://registry.npmjs.org/es-object-atoms/-/es-object-atoms-1.1.1.tgz 640ms (cache miss)
+296 http fetch GET 200 https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz 724ms (cache miss)
+297 http fetch GET 200 https://registry.npmjs.org/axios/-/axios-1.13.2.tgz 944ms (cache miss)
+298 silly ADD node_modules/mime-db
+299 silly ADD node_modules/dunder-proto
+300 silly ADD node_modules/math-intrinsics
+301 silly ADD node_modules/has-symbols
+302 silly ADD node_modules/gopd
+303 silly ADD node_modules/get-proto
+304 silly ADD node_modules/function-bind
+305 silly ADD node_modules/es-object-atoms
+306 silly ADD node_modules/es-define-property
+307 silly ADD node_modules/call-bind-apply-helpers
+308 silly ADD node_modules/has-tostringtag
+309 silly ADD node_modules/get-intrinsic
+310 silly ADD node_modules/es-errors
+311 silly ADD node_modules/delayed-stream
+312 silly ADD node_modules/mime-types
+313 silly ADD node_modules/hasown
+314 silly ADD node_modules/es-set-tostringtag
+315 silly ADD node_modules/combined-stream
+316 silly ADD node_modules/asynckit
+317 silly ADD node_modules/proxy-from-env
+318 silly ADD node_modules/form-data
+319 silly ADD node_modules/follow-redirects
+320 silly ADD node_modules/axios
+321 silly ADD
+322 silly ADD
+323 silly ADD
+324 silly ADD
+325 silly ADD
+326 silly ADD
+327 silly ADD
+328 silly ADD
+329 silly ADD
+330 silly ADD
+331 silly ADD
+332 silly ADD
+333 silly ADD
+334 silly ADD
+335 silly ADD
+336 silly ADD
+337 silly ADD
+338 silly ADD
+339 silly ADD
+340 silly ADD
+341 silly ADD
+342 silly ADD
+343 silly ADD
+344 silly ADD
+345 silly ADD
+346 silly ADD
+347 silly ADD
+348 silly ADD
+349 silly ADD
+350 silly ADD
+351 silly ADD
+352 silly ADD
+353 silly ADD
+354 silly ADD
+355 silly ADD
+356 silly ADD
+357 silly ADD
+358 silly ADD
+359 silly ADD
+360 silly ADD
+361 silly ADD
+362 silly ADD
+363 silly ADD
+364 silly ADD
+365 silly ADD
+366 silly ADD
+367 verbose cwd F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client
+368 verbose os Windows_NT 10.0.26200
+369 verbose node v22.18.0
+370 verbose npm  v10.9.3
+371 verbose exit 0
+372 info ok

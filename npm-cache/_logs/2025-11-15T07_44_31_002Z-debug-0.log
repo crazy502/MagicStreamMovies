@@ -1,0 +1,49 @@
+0 verbose cli E:\Node\node.exe E:\Node\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:E:\Node\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\nishu\AppData\Local\Microsoft\TypeScript\5.9\.npmrc
+5 silly config load:file:C:\Users\nishu\.npmrc
+6 silly config load:file:E:\Node\node_global\etc\npmrc
+7 verbose title npm install @types/bootstrap@ts5.9
+8 verbose argv "install" "--ignore-scripts" "@types/bootstrap@ts5.9" "--save-dev" "--user-agent" "typesInstaller/5.9.3"
+9 verbose logfile logs-max:10 dir:F:\CodeforGo\MagicStreamMovies\npm-cache\_logs\2025-11-15T07_44_31_002Z-
+10 verbose logfile F:\CodeforGo\MagicStreamMovies\npm-cache\_logs\2025-11-15T07_44_31_002Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly packumentCache corgi:https://registry.npmjs.org/@types%2fbootstrap cache-miss
+14 http fetch GET 200 https://registry.npmjs.org/@types%2fbootstrap 849ms (cache miss)
+15 silly packumentCache corgi:https://registry.npmjs.org/@types%2fbootstrap set size:undefined disposed:false
+16 silly idealTree buildDeps
+17 silly fetch manifest @types/bootstrap@5.2.10
+18 silly packumentCache full:https://registry.npmjs.org/@types%2fbootstrap cache-miss
+19 http fetch GET 200 https://registry.npmjs.org/@types%2fbootstrap 325ms (cache miss)
+20 silly packumentCache full:https://registry.npmjs.org/@types%2fbootstrap set size:undefined disposed:false
+21 silly placeDep ROOT @types/bootstrap@5.2.10 OK for:  want: 5.2.10
+22 silly fetch manifest @popperjs/core@^2.9.2
+23 silly packumentCache full:https://registry.npmjs.org/@popperjs%2fcore cache-miss
+24 http cache https://registry.npmjs.org/@popperjs%2fcore 10ms (cache hit)
+25 silly packumentCache full:https://registry.npmjs.org/@popperjs%2fcore set size:579534 disposed:false
+26 silly placeDep ROOT @popperjs/core@2.11.8 OK for: @types/bootstrap@5.2.10 want: ^2.9.2
+27 silly reify moves {}
+28 silly audit bulk request {
+28 silly audit   '@types/react': [ '19.2.5' ],
+28 silly audit   csstype: [ '3.2.0' ],
+28 silly audit   'types-registry': [ '0.1.746' ],
+28 silly audit   '@types/bootstrap': [ '5.2.10' ],
+28 silly audit   '@popperjs/core': [ '2.11.8' ]
+28 silly audit }
+29 http cache @popperjs/core@https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz 0ms (cache hit)
+30 http cache @types/bootstrap@https://registry.npmjs.org/@types/bootstrap/-/bootstrap-5.2.10.tgz 0ms (cache hit)
+31 silly tarball no local data for @types/bootstrap@https://registry.npmjs.org/@types/bootstrap/-/bootstrap-5.2.10.tgz. Extracting by manifest.
+32 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 222ms
+33 silly audit report {}
+34 http fetch GET 200 https://registry.npmjs.org/@types/bootstrap/-/bootstrap-5.2.10.tgz 784ms (cache miss)
+35 silly ADD node_modules/@popperjs/core
+36 silly ADD node_modules/@types/bootstrap
+37 verbose cwd C:\Users\nishu\AppData\Local\Microsoft\TypeScript\5.9
+38 verbose os Windows_NT 10.0.26200
+39 verbose node v22.18.0
+40 verbose npm  v10.9.3
+41 verbose exit 0
+42 info ok

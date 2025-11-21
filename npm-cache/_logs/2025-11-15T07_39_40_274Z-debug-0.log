@@ -1,0 +1,767 @@
+0 verbose cli E:\Node\node.exe E:\Node\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:E:\Node\node_modules\npm\npmrc
+4 silly config load:file:F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\.npmrc
+5 silly config load:file:C:\Users\nishu\.npmrc
+6 silly config load:file:E:\Node\node_global\etc\npmrc
+7 verbose title npm install react-bootstrap
+8 verbose argv "install" "react-bootstrap"
+9 verbose logfile logs-max:10 dir:F:\CodeforGo\MagicStreamMovies\npm-cache\_logs\2025-11-15T07_39_40_274Z-
+10 verbose logfile F:\CodeforGo\MagicStreamMovies\npm-cache\_logs\2025-11-15T07_39_40_274Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly fetch manifest react-bootstrap@*
+15 silly packumentCache full:https://registry.npmjs.org/react-bootstrap cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+17 http fetch GET 200 https://registry.npmjs.org/react-bootstrap 961ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/react-bootstrap set size:undefined disposed:false
+19 silly fetch manifest @types/react@^19.2.2
+20 silly packumentCache full:https://registry.npmjs.org/@types%2freact cache-miss
+21 http cache https://registry.npmjs.org/@types%2freact 11ms (cache hit)
+22 silly packumentCache full:https://registry.npmjs.org/@types%2freact set size:2520331 disposed:false
+23 silly fetch manifest react@^19.2.0
+24 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/react 728ms (cache updated)
+26 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+27 silly fetch manifest react-dom@^19.2.0
+28 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+29 http fetch GET 200 https://registry.npmjs.org/react-dom 497ms (cache updated)
+30 silly packumentCache full:https://registry.npmjs.org/react-dom set size:undefined disposed:false
+31 silly placeDep ROOT react-bootstrap@2.10.10 OK for: magic-stream-client@0.0.0 want: *
+32 silly fetch manifest warning@^4.0.3
+33 silly packumentCache full:https://registry.npmjs.org/warning cache-miss
+34 silly fetch manifest invariant@^2.2.4
+35 silly packumentCache full:https://registry.npmjs.org/invariant cache-miss
+36 silly fetch manifest classnames@^2.3.2
+37 silly packumentCache full:https://registry.npmjs.org/classnames cache-miss
+38 silly fetch manifest prop-types@^15.8.1
+39 silly packumentCache full:https://registry.npmjs.org/prop-types cache-miss
+40 silly fetch manifest @restart/ui@^1.9.4
+41 silly packumentCache full:https://registry.npmjs.org/@restart%2fui cache-miss
+42 silly fetch manifest dom-helpers@^5.2.1
+43 silly packumentCache full:https://registry.npmjs.org/dom-helpers cache-miss
+44 silly fetch manifest @babel/runtime@^7.24.7
+45 silly packumentCache full:https://registry.npmjs.org/@babel%2fruntime cache-miss
+46 silly fetch manifest @restart/hooks@^0.4.9
+47 silly packumentCache full:https://registry.npmjs.org/@restart%2fhooks cache-miss
+48 silly fetch manifest uncontrollable@^7.2.1
+49 silly packumentCache full:https://registry.npmjs.org/uncontrollable cache-miss
+50 silly fetch manifest prop-types-extra@^1.1.0
+51 silly packumentCache full:https://registry.npmjs.org/prop-types-extra cache-miss
+52 silly fetch manifest @types/prop-types@^15.7.12
+53 silly packumentCache full:https://registry.npmjs.org/@types%2fprop-types cache-miss
+54 silly fetch manifest react-transition-group@^4.4.5
+55 silly packumentCache full:https://registry.npmjs.org/react-transition-group cache-miss
+56 silly fetch manifest @types/react-transition-group@^4.4.6
+57 silly packumentCache full:https://registry.npmjs.org/@types%2freact-transition-group cache-miss
+58 http fetch GET 200 https://registry.npmjs.org/warning 190ms (cache miss)
+59 silly packumentCache full:https://registry.npmjs.org/warning set size:undefined disposed:false
+60 http fetch GET 200 https://registry.npmjs.org/invariant 605ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/invariant set size:undefined disposed:false
+62 http fetch GET 200 https://registry.npmjs.org/dom-helpers 622ms (cache miss)
+63 silly packumentCache full:https://registry.npmjs.org/dom-helpers set size:undefined disposed:false
+64 http fetch GET 200 https://registry.npmjs.org/prop-types 631ms (cache miss)
+65 silly packumentCache full:https://registry.npmjs.org/prop-types set size:undefined disposed:false
+66 http fetch GET 200 https://registry.npmjs.org/classnames 637ms (cache miss)
+67 silly packumentCache full:https://registry.npmjs.org/classnames set size:undefined disposed:false
+68 http fetch GET 200 https://registry.npmjs.org/uncontrollable 645ms (cache miss)
+69 silly packumentCache full:https://registry.npmjs.org/uncontrollable set size:undefined disposed:false
+70 http fetch GET 200 https://registry.npmjs.org/prop-types-extra 650ms (cache miss)
+71 silly packumentCache full:https://registry.npmjs.org/prop-types-extra set size:undefined disposed:false
+72 http fetch GET 200 https://registry.npmjs.org/react-transition-group 653ms (cache miss)
+73 silly packumentCache full:https://registry.npmjs.org/react-transition-group set size:undefined disposed:false
+74 http fetch GET 200 https://registry.npmjs.org/@types%2fprop-types 662ms (cache miss)
+75 silly packumentCache full:https://registry.npmjs.org/@types%2fprop-types set size:undefined disposed:false
+76 http fetch GET 200 https://registry.npmjs.org/@types%2freact-transition-group 717ms (cache miss)
+77 silly packumentCache full:https://registry.npmjs.org/@types%2freact-transition-group set size:undefined disposed:false
+78 http fetch GET 200 https://registry.npmjs.org/@restart%2fui 787ms (cache miss)
+79 silly packumentCache full:https://registry.npmjs.org/@restart%2fui set size:undefined disposed:false
+80 http fetch GET 200 https://registry.npmjs.org/@restart%2fhooks 805ms (cache miss)
+81 silly packumentCache full:https://registry.npmjs.org/@restart%2fhooks set size:undefined disposed:false
+82 http fetch GET 200 https://registry.npmjs.org/@babel%2fruntime 888ms (cache miss)
+83 silly packumentCache full:https://registry.npmjs.org/@babel%2fruntime set size:undefined disposed:false
+84 silly fetch manifest react@>=16.14.0
+85 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+86 http cache https://registry.npmjs.org/react 12ms (cache hit)
+87 silly packumentCache full:https://registry.npmjs.org/react set size:6268071 disposed:false
+88 silly fetch manifest react-dom@>=16.14.0
+89 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+90 http cache https://registry.npmjs.org/react-dom 16ms (cache hit)
+91 silly packumentCache full:https://registry.npmjs.org/react-dom set size:8213011 disposed:false
+92 silly fetch manifest @types/react@>=16.14.8
+93 silly packumentCache full:https://registry.npmjs.org/@types%2freact cache-miss
+94 http cache https://registry.npmjs.org/@types%2freact 16ms (cache hit)
+95 silly packumentCache full:https://registry.npmjs.org/@types%2freact set size:2520331 disposed:false
+96 silly placeDep ROOT @babel/runtime@7.28.4 OK for: react-bootstrap@2.10.10 want: ^7.24.7
+97 silly placeDep ROOT @restart/hooks@0.4.16 OK for: react-bootstrap@2.10.10 want: ^0.4.9
+98 silly placeDep ROOT @restart/ui@1.9.4 OK for: react-bootstrap@2.10.10 want: ^1.9.4
+99 silly placeDep ROOT @types/prop-types@15.7.15 OK for: react-bootstrap@2.10.10 want: ^15.7.12
+100 silly placeDep ROOT @types/react-transition-group@4.4.12 OK for: react-bootstrap@2.10.10 want: ^4.4.6
+101 silly placeDep ROOT classnames@2.5.1 OK for: react-bootstrap@2.10.10 want: ^2.3.2
+102 silly placeDep ROOT dom-helpers@5.2.1 OK for: react-bootstrap@2.10.10 want: ^5.2.1
+103 silly placeDep ROOT invariant@2.2.4 OK for: react-bootstrap@2.10.10 want: ^2.2.4
+104 silly placeDep ROOT prop-types@15.8.1 OK for: react-bootstrap@2.10.10 want: ^15.8.1
+105 silly placeDep ROOT prop-types-extra@1.1.1 OK for: react-bootstrap@2.10.10 want: ^1.1.0
+106 silly placeDep ROOT react-transition-group@4.4.5 OK for: react-bootstrap@2.10.10 want: ^4.4.5
+107 silly placeDep ROOT uncontrollable@7.2.1 OK for: react-bootstrap@2.10.10 want: ^7.2.1
+108 silly placeDep ROOT warning@4.0.3 OK for: react-bootstrap@2.10.10 want: ^4.0.3
+109 silly fetch manifest dequal@^2.0.3
+110 silly packumentCache full:https://registry.npmjs.org/dequal cache-miss
+111 silly fetch manifest dequal@^2.0.3
+112 silly packumentCache full:https://registry.npmjs.org/dequal cache-miss
+113 silly fetch manifest dom-helpers@^5.2.0
+114 silly packumentCache full:https://registry.npmjs.org/dom-helpers cache-miss
+115 silly fetch manifest @popperjs/core@^2.11.8
+116 silly packumentCache full:https://registry.npmjs.org/@popperjs%2fcore cache-miss
+117 silly fetch manifest @restart/hooks@^0.5.0
+118 silly packumentCache full:https://registry.npmjs.org/@restart%2fhooks cache-miss
+119 silly fetch manifest @types/warning@^3.0.3
+120 silly packumentCache full:https://registry.npmjs.org/@types%2fwarning cache-miss
+121 silly fetch manifest uncontrollable@^8.0.4
+122 silly packumentCache full:https://registry.npmjs.org/uncontrollable cache-miss
+123 silly fetch manifest @react-aria/ssr@^3.5.0
+124 silly packumentCache full:https://registry.npmjs.org/@react-aria%2fssr cache-miss
+125 silly fetch manifest loose-envify@^1.0.0
+126 silly packumentCache full:https://registry.npmjs.org/loose-envify cache-miss
+127 silly fetch manifest loose-envify@^1.4.0
+128 silly packumentCache full:https://registry.npmjs.org/loose-envify cache-miss
+129 silly fetch manifest object-assign@^4.1.1
+130 silly packumentCache full:https://registry.npmjs.org/object-assign cache-miss
+131 silly fetch manifest react-is@^16.13.1
+132 silly packumentCache full:https://registry.npmjs.org/react-is cache-miss
+133 silly fetch manifest react-is@^16.3.2
+134 silly packumentCache full:https://registry.npmjs.org/react-is cache-miss
+135 silly fetch manifest warning@^4.0.0
+136 silly packumentCache full:https://registry.npmjs.org/warning cache-miss
+137 silly fetch manifest loose-envify@^1.4.0
+138 silly packumentCache full:https://registry.npmjs.org/loose-envify cache-miss
+139 http cache https://registry.npmjs.org/@restart%2fhooks 14ms (cache hit)
+140 silly packumentCache full:https://registry.npmjs.org/@restart%2fhooks set size:179485 disposed:false
+141 silly fetch manifest react-lifecycles-compat@^3.0.4
+142 silly packumentCache full:https://registry.npmjs.org/react-lifecycles-compat cache-miss
+143 http cache https://registry.npmjs.org/dom-helpers 17ms (cache hit)
+144 silly packumentCache full:https://registry.npmjs.org/dom-helpers set size:76331 disposed:false
+145 silly fetch manifest loose-envify@^1.0.0
+146 silly packumentCache full:https://registry.npmjs.org/loose-envify cache-miss
+147 http cache https://registry.npmjs.org/uncontrollable 18ms (cache hit)
+148 silly packumentCache full:https://registry.npmjs.org/uncontrollable set size:116012 disposed:false
+149 http cache https://registry.npmjs.org/warning 18ms (cache hit)
+150 silly packumentCache full:https://registry.npmjs.org/warning set size:22942 disposed:false
+151 http fetch GET 200 https://registry.npmjs.org/dequal 172ms (cache miss)
+152 silly packumentCache full:https://registry.npmjs.org/dequal set size:undefined disposed:false
+153 http fetch GET 200 https://registry.npmjs.org/loose-envify 181ms (cache miss)
+154 silly packumentCache full:https://registry.npmjs.org/loose-envify set size:undefined disposed:false
+155 http fetch GET 200 https://registry.npmjs.org/object-assign 185ms (cache miss)
+156 silly packumentCache full:https://registry.npmjs.org/object-assign set size:undefined disposed:false
+157 http fetch GET 200 https://registry.npmjs.org/loose-envify 188ms (cache miss)
+158 silly packumentCache full:https://registry.npmjs.org/loose-envify set size:undefined disposed:false
+159 http fetch GET 200 https://registry.npmjs.org/loose-envify 172ms (cache miss)
+160 silly packumentCache full:https://registry.npmjs.org/loose-envify set size:undefined disposed:false
+161 http fetch GET 200 https://registry.npmjs.org/loose-envify 187ms (cache miss)
+162 silly packumentCache full:https://registry.npmjs.org/loose-envify set size:undefined disposed:false
+163 http fetch GET 200 https://registry.npmjs.org/react-lifecycles-compat 175ms (cache miss)
+164 silly packumentCache full:https://registry.npmjs.org/react-lifecycles-compat set size:undefined disposed:false
+165 http fetch GET 200 https://registry.npmjs.org/dequal 212ms (cache miss)
+166 silly packumentCache full:https://registry.npmjs.org/dequal set size:undefined disposed:false
+167 http fetch GET 200 https://registry.npmjs.org/@types%2fwarning 309ms (cache miss)
+168 silly packumentCache full:https://registry.npmjs.org/@types%2fwarning set size:undefined disposed:false
+169 http fetch GET 200 https://registry.npmjs.org/@popperjs%2fcore 344ms (cache miss)
+170 silly packumentCache full:https://registry.npmjs.org/@popperjs%2fcore set size:undefined disposed:false
+171 http fetch GET 200 https://registry.npmjs.org/@react-aria%2fssr 829ms (cache miss)
+172 silly packumentCache full:https://registry.npmjs.org/@react-aria%2fssr set size:undefined disposed:false
+173 http fetch GET 200 https://registry.npmjs.org/react-is 865ms (cache miss)
+174 silly packumentCache full:https://registry.npmjs.org/react-is set size:undefined disposed:false
+175 http fetch GET 200 https://registry.npmjs.org/react-is 1113ms (cache miss)
+176 silly packumentCache full:https://registry.npmjs.org/react-is set size:undefined disposed:false
+177 silly placeDep ROOT dequal@2.0.3 OK for: @restart/hooks@0.4.16 want: ^2.0.3
+178 silly placeDep ROOT @popperjs/core@2.11.8 OK for: @restart/ui@1.9.4 want: ^2.11.8
+179 silly placeDep ROOT @react-aria/ssr@3.9.10 OK for: @restart/ui@1.9.4 want: ^3.5.0
+180 silly placeDep node_modules/@restart/ui @restart/hooks@0.5.1 OK for: @restart/ui@1.9.4 want: ^0.5.0
+181 silly placeDep ROOT @types/warning@3.0.3 OK for: @restart/ui@1.9.4 want: ^3.0.3
+182 silly placeDep node_modules/@restart/ui uncontrollable@8.0.4 OK for: @restart/ui@1.9.4 want: ^8.0.4
+183 silly fetch manifest @swc/helpers@^0.5.0
+184 silly packumentCache full:https://registry.npmjs.org/@swc%2fhelpers cache-miss
+185 http fetch GET 200 https://registry.npmjs.org/@swc%2fhelpers 319ms (cache miss)
+186 silly packumentCache full:https://registry.npmjs.org/@swc%2fhelpers set size:undefined disposed:false
+187 silly placeDep ROOT @swc/helpers@0.5.17 OK for: @react-aria/ssr@3.9.10 want: ^0.5.0
+188 silly fetch manifest tslib@^2.8.0
+189 silly packumentCache full:https://registry.npmjs.org/tslib cache-miss
+190 http fetch GET 200 https://registry.npmjs.org/tslib 196ms (cache miss)
+191 silly packumentCache full:https://registry.npmjs.org/tslib set size:undefined disposed:false
+192 silly placeDep ROOT tslib@2.8.1 OK for: @swc/helpers@0.5.17 want: ^2.8.0
+193 silly placeDep ROOT loose-envify@1.4.0 OK for: invariant@2.2.4 want: ^1.0.0
+194 silly placeDep ROOT object-assign@4.1.1 OK for: prop-types@15.8.1 want: ^4.1.1
+195 silly placeDep ROOT react-is@16.13.1 OK for: prop-types@15.8.1 want: ^16.13.1
+196 silly placeDep ROOT react-lifecycles-compat@3.0.4 OK for: uncontrollable@7.2.1 want: ^3.0.4
+197 silly reify moves {}
+198 silly audit bulk request {
+198 silly audit   '@babel/code-frame': [ '7.27.1' ],
+198 silly audit   '@babel/compat-data': [ '7.28.5' ],
+198 silly audit   '@babel/core': [ '7.28.5' ],
+198 silly audit   '@babel/generator': [ '7.28.5' ],
+198 silly audit   '@babel/helper-compilation-targets': [ '7.27.2' ],
+198 silly audit   '@babel/helper-globals': [ '7.28.0' ],
+198 silly audit   '@babel/helper-module-imports': [ '7.27.1' ],
+198 silly audit   '@babel/helper-module-transforms': [ '7.28.3' ],
+198 silly audit   '@babel/helper-plugin-utils': [ '7.27.1' ],
+198 silly audit   '@babel/helper-string-parser': [ '7.27.1' ],
+198 silly audit   '@babel/helper-validator-identifier': [ '7.28.5' ],
+198 silly audit   '@babel/helper-validator-option': [ '7.27.1' ],
+198 silly audit   '@babel/helpers': [ '7.28.4' ],
+198 silly audit   '@babel/parser': [ '7.28.5' ],
+198 silly audit   '@babel/plugin-transform-react-jsx-self': [ '7.27.1' ],
+198 silly audit   '@babel/plugin-transform-react-jsx-source': [ '7.27.1' ],
+198 silly audit   '@babel/template': [ '7.27.2' ],
+198 silly audit   '@babel/traverse': [ '7.28.5' ],
+198 silly audit   '@babel/types': [ '7.28.5' ],
+198 silly audit   '@esbuild/aix-ppc64': [ '0.25.12' ],
+198 silly audit   '@esbuild/android-arm': [ '0.25.12' ],
+198 silly audit   '@esbuild/android-arm64': [ '0.25.12' ],
+198 silly audit   '@esbuild/android-x64': [ '0.25.12' ],
+198 silly audit   '@esbuild/darwin-arm64': [ '0.25.12' ],
+198 silly audit   '@esbuild/darwin-x64': [ '0.25.12' ],
+198 silly audit   '@esbuild/freebsd-arm64': [ '0.25.12' ],
+198 silly audit   '@esbuild/freebsd-x64': [ '0.25.12' ],
+198 silly audit   '@esbuild/linux-arm': [ '0.25.12' ],
+198 silly audit   '@esbuild/linux-arm64': [ '0.25.12' ],
+198 silly audit   '@esbuild/linux-ia32': [ '0.25.12' ],
+198 silly audit   '@esbuild/linux-loong64': [ '0.25.12' ],
+198 silly audit   '@esbuild/linux-mips64el': [ '0.25.12' ],
+198 silly audit   '@esbuild/linux-ppc64': [ '0.25.12' ],
+198 silly audit   '@esbuild/linux-riscv64': [ '0.25.12' ],
+198 silly audit   '@esbuild/linux-s390x': [ '0.25.12' ],
+198 silly audit   '@esbuild/linux-x64': [ '0.25.12' ],
+198 silly audit   '@esbuild/netbsd-arm64': [ '0.25.12' ],
+198 silly audit   '@esbuild/netbsd-x64': [ '0.25.12' ],
+198 silly audit   '@esbuild/openbsd-arm64': [ '0.25.12' ],
+198 silly audit   '@esbuild/openbsd-x64': [ '0.25.12' ],
+198 silly audit   '@esbuild/openharmony-arm64': [ '0.25.12' ],
+198 silly audit   '@esbuild/sunos-x64': [ '0.25.12' ],
+198 silly audit   '@esbuild/win32-arm64': [ '0.25.12' ],
+198 silly audit   '@esbuild/win32-ia32': [ '0.25.12' ],
+198 silly audit   '@esbuild/win32-x64': [ '0.25.12' ],
+198 silly audit   '@eslint-community/eslint-utils': [ '4.9.0' ],
+198 silly audit   'eslint-visitor-keys': [ '3.4.3', '4.2.1' ],
+198 silly audit   '@eslint-community/regexpp': [ '4.12.2' ],
+198 silly audit   '@eslint/config-array': [ '0.21.1' ],
+198 silly audit   '@eslint/config-helpers': [ '0.4.2' ],
+198 silly audit   '@eslint/core': [ '0.17.0' ],
+198 silly audit   '@eslint/eslintrc': [ '3.3.1' ],
+198 silly audit   globals: [ '14.0.0', '16.5.0' ],
+198 silly audit   '@eslint/js': [ '9.39.1' ],
+198 silly audit   '@eslint/object-schema': [ '2.1.7' ],
+198 silly audit   '@eslint/plugin-kit': [ '0.4.1' ],
+198 silly audit   '@humanfs/core': [ '0.19.1' ],
+198 silly audit   '@humanfs/node': [ '0.16.7' ],
+198 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+198 silly audit   '@humanwhocodes/retry': [ '0.4.3' ],
+198 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+198 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+198 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+198 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+198 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+198 silly audit   '@rolldown/pluginutils': [ '1.0.0-beta.47' ],
+198 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-android-arm64': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-darwin-arm64': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-darwin-x64': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-freebsd-x64': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-linux-loong64-gnu': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-linux-ppc64-gnu': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-openharmony-arm64': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-win32-x64-gnu': [ '4.53.2' ],
+198 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.53.2' ],
+198 silly audit   '@types/babel__core': [ '7.20.5' ],
+198 silly audit   '@types/babel__generator': [ '7.27.0' ],
+198 silly audit   '@types/babel__template': [ '7.4.4' ],
+198 silly audit   '@types/babel__traverse': [ '7.28.0' ],
+198 silly audit   '@types/estree': [ '1.0.8' ],
+198 silly audit   '@types/json-schema': [ '7.0.15' ],
+198 silly audit   '@types/react': [ '19.2.5' ],
+198 silly audit   '@types/react-dom': [ '19.2.3' ],
+198 silly audit   '@vitejs/plugin-react': [ '5.1.1' ],
+198 silly audit   acorn: [ '8.15.0' ],
+198 silly audit   'acorn-jsx': [ '5.3.2' ],
+198 silly audit   ajv: [ '6.12.6' ],
+198 silly audit   'ansi-styles': [ '4.3.0' ],
+198 silly audit   argparse: [ '2.0.1' ],
+198 silly audit   'balanced-match': [ '1.0.2' ],
+198 silly audit   'baseline-browser-mapping': [ '2.8.28' ],
+198 silly audit   'brace-expansion': [ '1.1.12' ],
+198 silly audit   browserslist: [ '4.28.0' ],
+198 silly audit   callsites: [ '3.1.0' ],
+198 silly audit   'caniuse-lite': [ '1.0.30001754' ],
+198 silly audit   chalk: [ '4.1.2' ],
+198 silly audit   'color-convert': [ '2.0.1' ],
+198 silly audit   'color-name': [ '1.1.4' ],
+198 silly audit   'concat-map': [ '0.0.1' ],
+198 silly audit   'convert-source-map': [ '2.0.0' ],
+198 silly audit   'cross-spawn': [ '7.0.6' ],
+198 silly audit   csstype: [ '3.2.0' ],
+198 silly audit   debug: [ '4.4.3' ],
+198 silly audit   'deep-is': [ '0.1.4' ],
+198 silly audit   'electron-to-chromium': [ '1.5.253' ],
+198 silly audit   esbuild: [ '0.25.12' ],
+198 silly audit   escalade: [ '3.2.0' ],
+198 silly audit   'escape-string-regexp': [ '4.0.0' ],
+198 silly audit   eslint: [ '9.39.1' ],
+198 silly audit   'eslint-plugin-react-hooks': [ '7.0.1' ],
+198 silly audit   'eslint-plugin-react-refresh': [ '0.4.24' ],
+198 silly audit   'eslint-scope': [ '8.4.0' ],
+198 silly audit   espree: [ '10.4.0' ],
+198 silly audit   esquery: [ '1.6.0' ],
+198 silly audit   esrecurse: [ '4.3.0' ],
+198 silly audit   estraverse: [ '5.3.0' ],
+198 silly audit   esutils: [ '2.0.3' ],
+198 silly audit   'fast-deep-equal': [ '3.1.3' ],
+198 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+198 silly audit   'fast-levenshtein': [ '2.0.6' ],
+198 silly audit   fdir: [ '6.5.0' ],
+198 silly audit   'file-entry-cache': [ '8.0.0' ],
+198 silly audit   'find-up': [ '5.0.0' ],
+198 silly audit   'flat-cache': [ '4.0.1' ],
+198 silly audit   flatted: [ '3.3.3' ],
+198 silly audit   fsevents: [ '2.3.3' ],
+198 silly audit   gensync: [ '1.0.0-beta.2' ],
+198 silly audit   'glob-parent': [ '6.0.2' ],
+198 silly audit   'has-flag': [ '4.0.0' ],
+198 silly audit   'hermes-estree': [ '0.25.1' ],
+198 silly audit   'hermes-parser': [ '0.25.1' ],
+198 silly audit   ignore: [ '5.3.2' ],
+198 silly audit   'import-fresh': [ '3.3.1' ],
+198 silly audit   imurmurhash: [ '0.1.4' ],
+198 silly audit   'is-extglob': [ '2.1.1' ],
+198 silly audit   'is-glob': [ '4.0.3' ],
+198 silly audit   isexe: [ '2.0.0' ],
+198 silly audit   'js-tokens': [ '4.0.0' ],
+198 silly audit   'js-yaml': [ '4.1.1' ],
+198 silly audit   jsesc: [ '3.1.0' ],
+198 silly audit   'json-buffer': [ '3.0.1' ],
+198 silly audit   'json-schema-traverse': [ '0.4.1' ],
+198 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+198 silly audit   json5: [ '2.2.3' ],
+198 silly audit   keyv: [ '4.5.4' ],
+198 silly audit   levn: [ '0.4.1' ],
+198 silly audit   'locate-path': [ '6.0.0' ],
+198 silly audit   'lodash.merge': [ '4.6.2' ],
+198 silly audit   'lru-cache': [ '5.1.1' ],
+198 silly audit   minimatch: [ '3.1.2' ],
+198 silly audit   ms: [ '2.1.3' ],
+198 silly audit   nanoid: [ '3.3.11' ],
+198 silly audit   'natural-compare': [ '1.4.0' ],
+198 silly audit   'node-releases': [ '2.0.27' ],
+198 silly audit   optionator: [ '0.9.4' ],
+198 silly audit   'p-limit': [ '3.1.0' ],
+198 silly audit   'p-locate': [ '5.0.0' ],
+198 silly audit   'parent-module': [ '1.0.1' ],
+198 silly audit   'path-exists': [ '4.0.0' ],
+198 silly audit   'path-key': [ '3.1.1' ],
+198 silly audit   picocolors: [ '1.1.1' ],
+198 silly audit   picomatch: [ '4.0.3' ],
+198 silly audit   postcss: [ '8.5.6' ],
+198 silly audit   'prelude-ls': [ '1.2.1' ],
+198 silly audit   punycode: [ '2.3.1' ],
+198 silly audit   react: [ '19.2.0' ],
+198 silly audit   'react-dom': [ '19.2.0' ],
+198 silly audit   'react-refresh': [ '0.18.0' ],
+198 silly audit   'resolve-from': [ '4.0.0' ],
+198 silly audit   rollup: [ '4.53.2' ],
+198 silly audit   scheduler: [ '0.27.0' ],
+198 silly audit   semver: [ '6.3.1' ],
+198 silly audit   'shebang-command': [ '2.0.0' ],
+198 silly audit   'shebang-regex': [ '3.0.0' ],
+198 silly audit   'source-map-js': [ '1.2.1' ],
+198 silly audit   'strip-json-comments': [ '3.1.1' ],
+198 silly audit   'supports-color': [ '7.2.0' ],
+198 silly audit   tinyglobby: [ '0.2.15' ],
+198 silly audit   'type-check': [ '0.4.0' ],
+198 silly audit   'update-browserslist-db': [ '1.1.4' ],
+198 silly audit   'uri-js': [ '4.4.1' ],
+198 silly audit   vite: [ '7.2.2' ],
+198 silly audit   which: [ '2.0.2' ],
+198 silly audit   'word-wrap': [ '1.2.5' ],
+198 silly audit   yallist: [ '3.1.1' ],
+198 silly audit   'yocto-queue': [ '0.1.0' ],
+198 silly audit   zod: [ '4.1.12' ],
+198 silly audit   'zod-validation-error': [ '4.0.2' ],
+198 silly audit   'react-bootstrap': [ '2.10.10' ],
+198 silly audit   '@babel/runtime': [ '7.28.4' ],
+198 silly audit   '@restart/hooks': [ '0.4.16', '0.5.1' ],
+198 silly audit   '@restart/ui': [ '1.9.4' ],
+198 silly audit   '@types/prop-types': [ '15.7.15' ],
+198 silly audit   '@types/react-transition-group': [ '4.4.12' ],
+198 silly audit   classnames: [ '2.5.1' ],
+198 silly audit   'dom-helpers': [ '5.2.1' ],
+198 silly audit   invariant: [ '2.2.4' ],
+198 silly audit   'prop-types': [ '15.8.1' ],
+198 silly audit   'prop-types-extra': [ '1.1.1' ],
+198 silly audit   'react-transition-group': [ '4.4.5' ],
+198 silly audit   uncontrollable: [ '7.2.1', '8.0.4' ],
+198 silly audit   warning: [ '4.0.3' ],
+198 silly audit   dequal: [ '2.0.3' ],
+198 silly audit   '@popperjs/core': [ '2.11.8' ],
+198 silly audit   '@react-aria/ssr': [ '3.9.10' ],
+198 silly audit   '@types/warning': [ '3.0.3' ],
+198 silly audit   '@swc/helpers': [ '0.5.17' ],
+198 silly audit   tslib: [ '2.8.1' ],
+198 silly audit   'loose-envify': [ '1.4.0' ],
+198 silly audit   'object-assign': [ '4.1.1' ],
+198 silly audit   'react-is': [ '16.13.1' ],
+198 silly audit   'react-lifecycles-compat': [ '3.0.4' ]
+198 silly audit }
+199 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\fsevents
+200 silly reify mark deleted [
+200 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\fsevents'
+200 silly reify ]
+201 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-win32-ia32-msvc
+202 silly reify mark deleted [
+202 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-win32-ia32-msvc'
+202 silly reify ]
+203 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-win32-arm64-msvc
+204 silly reify mark deleted [
+204 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-win32-arm64-msvc'
+204 silly reify ]
+205 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-openharmony-arm64
+206 silly reify mark deleted [
+206 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-openharmony-arm64'
+206 silly reify ]
+207 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-x64-musl
+208 silly reify mark deleted [
+208 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-x64-musl'
+208 silly reify ]
+209 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-x64-gnu
+210 silly reify mark deleted [
+210 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-x64-gnu'
+210 silly reify ]
+211 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-s390x-gnu
+212 silly reify mark deleted [
+212 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-s390x-gnu'
+212 silly reify ]
+213 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-riscv64-musl
+214 silly reify mark deleted [
+214 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-riscv64-musl'
+214 silly reify ]
+215 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-riscv64-gnu
+216 silly reify mark deleted [
+216 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-riscv64-gnu'
+216 silly reify ]
+217 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-ppc64-gnu
+218 silly reify mark deleted [
+218 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-ppc64-gnu'
+218 silly reify ]
+219 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-loong64-gnu
+220 silly reify mark deleted [
+220 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-loong64-gnu'
+220 silly reify ]
+221 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-arm64-musl
+222 silly reify mark deleted [
+222 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-arm64-musl'
+222 silly reify ]
+223 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-arm64-gnu
+224 silly reify mark deleted [
+224 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-arm64-gnu'
+224 silly reify ]
+225 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-arm-musleabihf
+226 silly reify mark deleted [
+226 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-arm-musleabihf'
+226 silly reify ]
+227 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-linux-arm-gnueabihf
+228 silly reify mark deleted [
+228 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-linux-arm-gnueabihf'
+228 silly reify ]
+229 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-freebsd-x64
+230 silly reify mark deleted [
+230 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-freebsd-x64'
+230 silly reify ]
+231 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-freebsd-arm64
+232 silly reify mark deleted [
+232 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-freebsd-arm64'
+232 silly reify ]
+233 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-darwin-x64
+234 silly reify mark deleted [
+234 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-darwin-x64'
+234 silly reify ]
+235 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-darwin-arm64
+236 silly reify mark deleted [
+236 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-darwin-arm64'
+236 silly reify ]
+237 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-android-arm64
+238 silly reify mark deleted [
+238 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-android-arm64'
+238 silly reify ]
+239 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@rollup\rollup-android-arm-eabi
+240 silly reify mark deleted [
+240 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@rollup\\rollup-android-arm-eabi'
+240 silly reify ]
+241 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\win32-ia32
+242 silly reify mark deleted [
+242 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\win32-ia32'
+242 silly reify ]
+243 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\win32-arm64
+244 silly reify mark deleted [
+244 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\win32-arm64'
+244 silly reify ]
+245 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\sunos-x64
+246 silly reify mark deleted [
+246 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\sunos-x64'
+246 silly reify ]
+247 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\openharmony-arm64
+248 silly reify mark deleted [
+248 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\openharmony-arm64'
+248 silly reify ]
+249 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\openbsd-x64
+250 silly reify mark deleted [
+250 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\openbsd-x64'
+250 silly reify ]
+251 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\openbsd-arm64
+252 silly reify mark deleted [
+252 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\openbsd-arm64'
+252 silly reify ]
+253 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\netbsd-x64
+254 silly reify mark deleted [
+254 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\netbsd-x64'
+254 silly reify ]
+255 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\netbsd-arm64
+256 silly reify mark deleted [
+256 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\netbsd-arm64'
+256 silly reify ]
+257 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-x64
+258 silly reify mark deleted [
+258 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-x64'
+258 silly reify ]
+259 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-s390x
+260 silly reify mark deleted [
+260 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-s390x'
+260 silly reify ]
+261 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-riscv64
+262 silly reify mark deleted [
+262 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-riscv64'
+262 silly reify ]
+263 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-ppc64
+264 silly reify mark deleted [
+264 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-ppc64'
+264 silly reify ]
+265 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-mips64el
+266 silly reify mark deleted [
+266 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-mips64el'
+266 silly reify ]
+267 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-loong64
+268 silly reify mark deleted [
+268 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-loong64'
+268 silly reify ]
+269 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-ia32
+270 silly reify mark deleted [
+270 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-ia32'
+270 silly reify ]
+271 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-arm64
+272 silly reify mark deleted [
+272 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-arm64'
+272 silly reify ]
+273 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\linux-arm
+274 silly reify mark deleted [
+274 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\linux-arm'
+274 silly reify ]
+275 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\freebsd-x64
+276 silly reify mark deleted [
+276 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\freebsd-x64'
+276 silly reify ]
+277 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\freebsd-arm64
+278 silly reify mark deleted [
+278 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\freebsd-arm64'
+278 silly reify ]
+279 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\darwin-x64
+280 silly reify mark deleted [
+280 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\darwin-x64'
+280 silly reify ]
+281 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\darwin-arm64
+282 silly reify mark deleted [
+282 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\darwin-arm64'
+282 silly reify ]
+283 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\android-x64
+284 silly reify mark deleted [
+284 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\android-x64'
+284 silly reify ]
+285 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\android-arm64
+286 silly reify mark deleted [
+286 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\android-arm64'
+286 silly reify ]
+287 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\android-arm
+288 silly reify mark deleted [
+288 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\android-arm'
+288 silly reify ]
+289 verbose reify failed optional dependency F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client\node_modules\@esbuild\aix-ppc64
+290 silly reify mark deleted [
+290 silly reify   'F:\\CodeforGo\\MagicStreamMovies\\Client\\magic-stream-client\\node_modules\\@esbuild\\aix-ppc64'
+290 silly reify ]
+291 http cache react-lifecycles-compat@https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz 0ms (cache hit)
+292 http cache react-is@https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz 0ms (cache hit)
+293 http cache loose-envify@https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz 0ms (cache hit)
+294 http cache @types/warning@https://registry.npmjs.org/@types/warning/-/warning-3.0.3.tgz 0ms (cache hit)
+295 http cache @popperjs/core@https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz 0ms (cache hit)
+296 http cache object-assign@https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz 0ms (cache hit)
+297 http cache @swc/helpers@https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.17.tgz 0ms (cache hit)
+298 http cache tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 0ms (cache hit)
+299 http cache @react-aria/ssr@https://registry.npmjs.org/@react-aria/ssr/-/ssr-3.9.10.tgz 0ms (cache hit)
+300 http cache dequal@https://registry.npmjs.org/dequal/-/dequal-2.0.3.tgz 0ms (cache hit)
+301 http cache warning@https://registry.npmjs.org/warning/-/warning-4.0.3.tgz 0ms (cache hit)
+302 http cache uncontrollable@https://registry.npmjs.org/uncontrollable/-/uncontrollable-7.2.1.tgz 0ms (cache hit)
+303 http cache invariant@https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz 0ms (cache hit)
+304 http cache react-transition-group@https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz 0ms (cache hit)
+305 http cache prop-types-extra@https://registry.npmjs.org/prop-types-extra/-/prop-types-extra-1.1.1.tgz 0ms (cache hit)
+306 http cache dom-helpers@https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.2.1.tgz 0ms (cache hit)
+307 http cache @types/prop-types@https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.15.tgz 0ms (cache hit)
+308 http cache classnames@https://registry.npmjs.org/classnames/-/classnames-2.5.1.tgz 0ms (cache hit)
+309 http cache prop-types@https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz 0ms (cache hit)
+310 http cache @types/react-transition-group@https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.12.tgz 0ms (cache hit)
+311 http cache @babel/runtime@https://registry.npmjs.org/@babel/runtime/-/runtime-7.28.4.tgz 0ms (cache hit)
+312 http cache react-bootstrap@https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.10.10.tgz 0ms (cache hit)
+313 silly tarball no local data for react-lifecycles-compat@https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz. Extracting by manifest.
+314 silly tarball no local data for react-is@https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz. Extracting by manifest.
+315 http cache @restart/ui@https://registry.npmjs.org/@restart/ui/-/ui-1.9.4.tgz 0ms (cache hit)
+316 http cache @restart/hooks@https://registry.npmjs.org/@restart/hooks/-/hooks-0.4.16.tgz 0ms (cache hit)
+317 silly tarball no local data for loose-envify@https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz. Extracting by manifest.
+318 silly tarball no local data for @types/warning@https://registry.npmjs.org/@types/warning/-/warning-3.0.3.tgz. Extracting by manifest.
+319 silly tarball no local data for @popperjs/core@https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz. Extracting by manifest.
+320 silly tarball no local data for object-assign@https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz. Extracting by manifest.
+321 http cache @restart/hooks@https://registry.npmjs.org/@restart/hooks/-/hooks-0.5.1.tgz 0ms (cache hit)
+322 silly tarball no local data for @swc/helpers@https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.17.tgz. Extracting by manifest.
+323 silly tarball no local data for tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz. Extracting by manifest.
+324 silly tarball no local data for @react-aria/ssr@https://registry.npmjs.org/@react-aria/ssr/-/ssr-3.9.10.tgz. Extracting by manifest.
+325 silly tarball no local data for dequal@https://registry.npmjs.org/dequal/-/dequal-2.0.3.tgz. Extracting by manifest.
+326 silly tarball no local data for warning@https://registry.npmjs.org/warning/-/warning-4.0.3.tgz. Extracting by manifest.
+327 http cache uncontrollable@https://registry.npmjs.org/uncontrollable/-/uncontrollable-8.0.4.tgz 0ms (cache hit)
+328 silly tarball no local data for uncontrollable@https://registry.npmjs.org/uncontrollable/-/uncontrollable-7.2.1.tgz. Extracting by manifest.
+329 silly tarball no local data for invariant@https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz. Extracting by manifest.
+330 silly tarball no local data for react-transition-group@https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz. Extracting by manifest.
+331 silly tarball no local data for prop-types-extra@https://registry.npmjs.org/prop-types-extra/-/prop-types-extra-1.1.1.tgz. Extracting by manifest.
+332 silly tarball no local data for dom-helpers@https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.2.1.tgz. Extracting by manifest.
+333 silly tarball no local data for @types/prop-types@https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.15.tgz. Extracting by manifest.
+334 silly tarball no local data for classnames@https://registry.npmjs.org/classnames/-/classnames-2.5.1.tgz. Extracting by manifest.
+335 silly tarball no local data for prop-types@https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz. Extracting by manifest.
+336 silly tarball no local data for @types/react-transition-group@https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.12.tgz. Extracting by manifest.
+337 silly tarball no local data for @babel/runtime@https://registry.npmjs.org/@babel/runtime/-/runtime-7.28.4.tgz. Extracting by manifest.
+338 silly tarball no local data for react-bootstrap@https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.10.10.tgz. Extracting by manifest.
+339 silly tarball no local data for @restart/ui@https://registry.npmjs.org/@restart/ui/-/ui-1.9.4.tgz. Extracting by manifest.
+340 silly tarball no local data for @restart/hooks@https://registry.npmjs.org/@restart/hooks/-/hooks-0.4.16.tgz. Extracting by manifest.
+341 silly tarball no local data for @restart/hooks@https://registry.npmjs.org/@restart/hooks/-/hooks-0.5.1.tgz. Extracting by manifest.
+342 silly tarball no local data for uncontrollable@https://registry.npmjs.org/uncontrollable/-/uncontrollable-8.0.4.tgz. Extracting by manifest.
+343 http fetch GET 200 https://registry.npmjs.org/@types/warning/-/warning-3.0.3.tgz 202ms (cache miss)
+344 http fetch GET 200 https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz 205ms (cache miss)
+345 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 220ms
+346 silly audit report {}
+347 http fetch GET 200 https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz 205ms (cache miss)
+348 http fetch GET 200 https://registry.npmjs.org/warning/-/warning-4.0.3.tgz 205ms (cache miss)
+349 http fetch GET 200 https://registry.npmjs.org/dequal/-/dequal-2.0.3.tgz 211ms (cache miss)
+350 http fetch GET 200 https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz 213ms (cache miss)
+351 http fetch GET 200 https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz 218ms (cache miss)
+352 http fetch GET 200 https://registry.npmjs.org/@react-aria/ssr/-/ssr-3.9.10.tgz 219ms (cache miss)
+353 http fetch GET 200 https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 227ms (cache miss)
+354 http fetch GET 200 https://registry.npmjs.org/uncontrollable/-/uncontrollable-7.2.1.tgz 244ms (cache miss)
+355 http fetch GET 200 https://registry.npmjs.org/prop-types-extra/-/prop-types-extra-1.1.1.tgz 353ms (cache miss)
+356 http fetch GET 200 https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.15.tgz 361ms (cache miss)
+357 http fetch GET 200 https://registry.npmjs.org/classnames/-/classnames-2.5.1.tgz 365ms (cache miss)
+358 http fetch GET 200 https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.12.tgz 389ms (cache miss)
+359 http fetch GET 200 https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz 418ms (cache miss)
+360 http fetch GET 200 https://registry.npmjs.org/uncontrollable/-/uncontrollable-8.0.4.tgz 439ms (cache miss)
+361 http fetch GET 200 https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz 633ms (cache miss)
+362 http fetch GET 200 https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz 686ms (cache miss)
+363 http fetch GET 200 https://registry.npmjs.org/@restart/ui/-/ui-1.9.4.tgz 701ms (cache miss)
+364 http fetch GET 200 https://registry.npmjs.org/@babel/runtime/-/runtime-7.28.4.tgz 749ms (cache miss)
+365 http fetch GET 200 https://registry.npmjs.org/@restart/hooks/-/hooks-0.5.1.tgz 769ms (cache miss)
+366 http fetch GET 200 https://registry.npmjs.org/@restart/hooks/-/hooks-0.4.16.tgz 773ms (cache miss)
+367 http fetch GET 200 https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz 778ms (cache miss)
+368 http fetch GET 200 https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.2.1.tgz 789ms (cache miss)
+369 http fetch GET 200 https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.17.tgz 820ms (cache miss)
+370 http fetch GET 200 https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-2.10.10.tgz 1118ms (cache miss)
+371 silly ADD node_modules/react-lifecycles-compat
+372 silly ADD node_modules/react-is
+373 silly ADD node_modules/object-assign
+374 silly ADD node_modules/loose-envify
+375 silly ADD node_modules/tslib
+376 silly ADD node_modules/@swc/helpers
+377 silly ADD node_modules/@types/warning
+378 silly ADD node_modules/@react-aria/ssr
+379 silly ADD node_modules/@popperjs/core
+380 silly ADD node_modules/dequal
+381 silly ADD node_modules/warning
+382 silly ADD node_modules/uncontrollable
+383 silly ADD node_modules/react-transition-group
+384 silly ADD node_modules/prop-types-extra
+385 silly ADD node_modules/prop-types
+386 silly ADD node_modules/invariant
+387 silly ADD node_modules/dom-helpers
+388 silly ADD node_modules/classnames
+389 silly ADD node_modules/@types/react-transition-group
+390 silly ADD node_modules/@types/prop-types
+391 silly ADD node_modules/@restart/ui
+392 silly ADD node_modules/@restart/ui/node_modules/uncontrollable
+393 silly ADD node_modules/@restart/ui/node_modules/@restart/hooks
+394 silly ADD node_modules/@restart/hooks
+395 silly ADD node_modules/@babel/runtime
+396 silly ADD node_modules/react-bootstrap
+397 silly ADD
+398 silly ADD
+399 silly ADD
+400 silly ADD
+401 silly ADD
+402 silly ADD
+403 silly ADD
+404 silly ADD
+405 silly ADD
+406 silly ADD
+407 silly ADD
+408 silly ADD
+409 silly ADD
+410 silly ADD
+411 silly ADD
+412 silly ADD
+413 silly ADD
+414 silly ADD
+415 silly ADD
+416 silly ADD
+417 silly ADD
+418 silly ADD
+419 silly ADD
+420 silly ADD
+421 silly ADD
+422 silly ADD
+423 silly ADD
+424 silly ADD
+425 silly ADD
+426 silly ADD
+427 silly ADD
+428 silly ADD
+429 silly ADD
+430 silly ADD
+431 silly ADD
+432 silly ADD
+433 silly ADD
+434 silly ADD
+435 silly ADD
+436 silly ADD
+437 silly ADD
+438 silly ADD
+439 silly ADD
+440 silly ADD
+441 silly ADD
+442 silly ADD
+443 verbose cwd F:\CodeforGo\MagicStreamMovies\Client\magic-stream-client
+444 verbose os Windows_NT 10.0.26200
+445 verbose node v22.18.0
+446 verbose npm  v10.9.3
+447 verbose exit 0
+448 info ok
