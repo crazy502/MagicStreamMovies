@@ -8,13 +8,11 @@
 # Test binary, built with go test -c
 *.test
 
-# Output of the go coverage tool, specifically when used with LiteIDE
+# Output of the go coverage tool
 *.out
 
 # Dependency directories
 vendor/
-go.mod
-go.sum
 
 # IDE specific files
 .idea/
@@ -22,9 +20,11 @@ go.sum
 *.swp
 *.swo
 
-# Environment files
+# Environment files - ✅ 这个应该保留！
 .env
+.env.local
 
 # OS specific files
 .DS_Store
 Thumbs.db
+
